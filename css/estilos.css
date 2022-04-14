@@ -353,6 +353,8 @@ body{
 .card-room{
     height: 30em;
     margin: 3%;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-img{
@@ -361,6 +363,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform .2s;
 }
 
 .card-overlay {
@@ -427,4 +430,22 @@ body{
 .card-room:hover .room-bg{
     transition-duration: .1s;
     background-image: linear-gradient(to bottom, transparent, transparent);
+}
+
+.card-room:hover .card-img{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.btn-amarillo{
+    color: #fff !important;
+    background-color: #d69c4f !important;
+    border-color: #d69c4f !important;
+}
+
+.btn-amarillo:hover{
+    color: #fff !important;
+    background-color: #74542c !important;
+    border-color: #74542c !important;
 }
