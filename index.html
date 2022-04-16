@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/bd0bb73cdd.js" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body class="">
     
@@ -258,48 +259,58 @@
             </li>
           </ul>
         </div>
-        <div id="parqueidentidad" class="container-fluid d-block carousel col-md-12 col-lg-10">
+        <div class="container-fluid d-block carousel col-md-12 col-lg-10">
           <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
             <div class="carousel-inner p-0 d-block">
-              <img class="img-fluid" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="parqueidentidad_img" class="img-fluid d-block" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="plazadearmas_img" class="img-fluid d-none" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="cerritodelalibertad_img" class="img-fluid d-none" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
             </div>
           </div>  
           <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
-              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
-              <div class="mt-3 d-block">
+            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
+              <h2 id="parqueidentidad_titulo" class="m-0" style="text-transform: uppercase; font-weight: 330;">Parque de la Identidad Wanka</h2>
+              <div id="parqueidentidad_texto" class="mt-3 d-block">
+                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
+              </div>
+              <h2 id="plazadearmas_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330;">Plaza Constitución</h2>
+              <div id="plazadearmas_texto" class="mt-3 d-none">
+                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
+              </div>
+              <h2 id="cerritodelalibertad_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330;">Cerrito de la Libertad</h2>
+              <div id="cerritodelalibertad_texto" class="mt-3 d-none">
                 Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
               </div>
               <a class="btn btn-primary mt-3" href="#">Más información</a>
             </div>
           </div>
         </div>
-        <div id="plazadearmas" class="container-fluid d-none carousel col-md-12 col-lg-10">
+        <div id="" class="container-fluid d-none carousel col-md-12 col-lg-10">
           <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
             <div class="carousel-inner p-0 d-block">
-              <img class="img-fluid" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="" class="img-fluid" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
             </div>
           </div>  
           <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
-              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
-              <div class="mt-3 d-block">
+            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
+              <h2 id="" class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
+              <div id="" class="mt-3 d-block">
                 Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
               </div>
               <a class="btn btn-primary mt-3" href="#">Más información</a>
             </div>
           </div>
         </div>
-        <div id="cerritodelalibertad" class="container-fluid d-none carousel col-md-12 col-lg-10">
+        <div id="" class="container-fluid d-none carousel col-md-12 col-lg-10">
           <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
             <div class="carousel-inner p-0 d-block">
-              <img class="img-fluid" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="" class="img-fluid" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
             </div>
           </div>  
           <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
-              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
-              <div class="mt-3 d-block">
+            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
+              <h2 id="" class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
+              <div id="" class="mt-3 d-block">
                 Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
               </div>
               <a class="btn btn-primary mt-3" href="#">Más información</a>
