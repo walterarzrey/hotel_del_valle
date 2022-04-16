@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/bd0bb73cdd.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
 </head>
 <body class="">
     
@@ -240,13 +241,76 @@
         <br>
       </div>
 
-      <!-- Resumen cuartos -->
-      <div class="container-fluid pb-3">
-        <div class="container-fluid pb-3">
-        s
+      <!-- Lugares Turísticos -->
+      <div class="container-fluid pb-3 carousel col-lg-9 d-block">
+        <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Lugares Turísticos Cercanos</strong></h3>
+        <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
+        <div class="d-block">
+          <ul class="d-flex justify-content-center" style="list-style: none;">
+            <li class="d-flex justify-content-center col-lg-3">
+              <a class="" id="parqueidentidad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Parque de la Identidad Wanka</a>
+            </li>
+            <li class="d-flex justify-content-center col-lg-3">
+              <a class="" id="plazadearmas_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Plaza de Armas Huancayo</a>
+            </li>
+            <li class="d-flex justify-content-center col-lg-3">
+              <a class="" id="cerritodelalibertad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Cerrito de La Libertad</a>
+            </li>
+          </ul>
         </div>
+        <div id="parqueidentidad" class="container-fluid d-block carousel col-md-12 col-lg-10">
+          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
+            <div class="carousel-inner p-0 d-block">
+              <img class="img-fluid" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+            </div>
+          </div>  
+          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
+            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
+              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
+              <div class="mt-3 d-block">
+                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
+              </div>
+              <a class="btn btn-primary mt-3" href="#">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div id="plazadearmas" class="container-fluid d-none carousel col-md-12 col-lg-10">
+          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
+            <div class="carousel-inner p-0 d-block">
+              <img class="img-fluid" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+            </div>
+          </div>  
+          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
+            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
+              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
+              <div class="mt-3 d-block">
+                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
+              </div>
+              <a class="btn btn-primary mt-3" href="#">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div id="cerritodelalibertad" class="container-fluid d-none carousel col-md-12 col-lg-10">
+          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
+            <div class="carousel-inner p-0 d-block">
+              <img class="img-fluid" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+            </div>
+          </div>  
+          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
+            <div class="p-4 rounded fade-in" style="background-color: #f4f4f4;">
+              <h2 class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
+              <div class="mt-3 d-block">
+                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
+              </div>
+              <a class="btn btn-primary mt-3" href="#">Más información</a>
+            </div>
+          </div>
+        </div>
+      <br>
       </div>
 
+
+      
 
       <!-- Numeros -->
       <div class="parallax-container pb-3">
@@ -261,7 +325,7 @@
         </div>
       </div>
 
-      <!-- Lorem Ipsum -->
+      <!-- Footer -->
       <div class="mt-4" id="Translation">
 
         <h3>The standard Lorem Ipsum passage, used since the 1500s</h3><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>

@@ -449,3 +449,14 @@ body{
     background-color: #74542c !important;
     border-color: #74542c !important;
 }
+
+.fade-in{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-wrap {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: all 1.2s
+}
