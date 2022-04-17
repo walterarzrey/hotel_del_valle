@@ -114,7 +114,7 @@
       <div class="container-fluid pb-3">
         <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Nuestros Servicios</strong></h3>
         <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-        <ul class="d-flex flex-wrap my-0 mx-auto col-xsm-10 col-sm-10 col-md-10 col-lg-6" style="padding-right: 2rem; padding-left: 2rem;">
+        <ul class="d-flex flex-wrap my-0 mx-auto col-xsm-12 col-sm-10 col-md-10 col-lg-6" style="padding-right: 2rem; padding-left: 2rem;">
           <li class="p-4 card justify-content-center align-items-center col-xsm-6 col-sm-6 col-md-3 col-lg-3   item-serv" data-testid="grid-item-1" aria-label="Free parking">
             <span class="" aria-hidden="true">
               <span>
@@ -243,77 +243,45 @@
       </div>
 
       <!-- Lugares Turísticos -->
-      <div class="container-fluid pb-3 carousel col-lg-9 d-block">
+      <div class="container-fluid pb-3 carousel col-md-12 col-lg-12 col-xl-9 d-block">
         <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Lugares Turísticos Cercanos</strong></h3>
         <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-        <div class="d-block">
-          <ul class="d-flex justify-content-center" style="list-style: none;">
-            <li class="d-flex justify-content-center col-lg-3">
-              <a class="" id="parqueidentidad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Parque de la Identidad Wanka</a>
+        <div class="d-block mb-4 mt-4">
+          <ul class="d-flex flex-wrap lista_tours p-3" style="list-style: none;">
+            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+              <a class="link_tours active_link" id="parqueidentidad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Parque de la Identidad Wanka</a>
             </li>
-            <li class="d-flex justify-content-center col-lg-3">
-              <a class="" id="plazadearmas_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Plaza de Armas Huancayo</a>
+            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+              <a class="link_tours" id="plazadearmas_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Plaza de Armas Huancayo</a>
             </li>
-            <li class="d-flex justify-content-center col-lg-3">
-              <a class="" id="cerritodelalibertad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Cerrito de La Libertad</a>
+            <li class="d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+              <a class="link_tours" id="cerritodelalibertad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Cerrito de la Libertad</a>
             </li>
           </ul>
         </div>
-        <div class="container-fluid d-block carousel col-md-12 col-lg-10">
-          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
-            <div class="carousel-inner p-0 d-block">
-              <img id="parqueidentidad_img" class="img-fluid d-block" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
-              <img id="plazadearmas_img" class="img-fluid d-none" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
-              <img id="cerritodelalibertad_img" class="img-fluid d-none" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+        <div class="container-fluid d-block carousel col-md-11 col-lg-10">
+          <div class="container-fluid p-0 offset-4 col-md-8 col-lg-8 img_tours">
+            <div class="carousel-inner p-0 d-block card shadow">
+              <img id="parqueidentidad_img" class="img_tours img-fluid d-block" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="plazadearmas_img" class="img_tours img-fluid d-none" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="cerritodelalibertad_img" class="img_tours img-fluid d-none" src="img/cerrito_libertad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
             </div>
           </div>  
-          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
-              <h2 id="parqueidentidad_titulo" class="m-0" style="text-transform: uppercase; font-weight: 330;">Parque de la Identidad Wanka</h2>
-              <div id="parqueidentidad_texto" class="mt-3 d-block">
+          <div class="col-md-6 col-lg-5 text_tours" style="clear: none;">
+            <div class="p-4 texto_card" style="background-color: #f4f4f4;">
+              <h2 id="parqueidentidad_titulo" class="m-0" style="text-transform: uppercase; font-weight: 330; text-align: center;">Parque de la Identidad Wanka</h2>
+              <div id="parqueidentidad_texto" class="mt-3 d-block" style="text-align: justify;">
                 Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
               </div>
-              <h2 id="plazadearmas_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330;">Plaza Constitución</h2>
-              <div id="plazadearmas_texto" class="mt-3 d-none">
+              <h2 id="plazadearmas_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330; text-align: center;">Plaza Constitución</h2>
+              <div id="plazadearmas_texto" class="mt-3 d-none" style="text-align: justify;">
+                Huancayo capital de Junín, la hermosa Ciudad Incontrastable, nos da la bienvenida con su gran plaza de armas, la Plaza Constitución. Ubicada a solo 10 minutos del Hotel Del Valle,
+              </div>
+              <h2 id="cerritodelalibertad_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330; text-align: center;">Cerrito de la Libertad</h2>
+              <div id="cerritodelalibertad_texto" class="mt-3 d-none" style="text-align: justify;">
                 Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
               </div>
-              <h2 id="cerritodelalibertad_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330;">Cerrito de la Libertad</h2>
-              <div id="cerritodelalibertad_texto" class="mt-3 d-none">
-                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
-              </div>
-              <a class="btn btn-primary mt-3" href="#">Más información</a>
-            </div>
-          </div>
-        </div>
-        <div id="" class="container-fluid d-none carousel col-md-12 col-lg-10">
-          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
-            <div class="carousel-inner p-0 d-block">
-              <img id="" class="img-fluid" src="img/cuarto1.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
-            </div>
-          </div>  
-          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
-              <h2 id="" class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
-              <div id="" class="mt-3 d-block">
-                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
-              </div>
-              <a class="btn btn-primary mt-3" href="#">Más información</a>
-            </div>
-          </div>
-        </div>
-        <div id="" class="container-fluid d-none carousel col-md-12 col-lg-10">
-          <div class="container-fluid p-0 offset-4  col-md-12 col-lg-8">
-            <div class="carousel-inner p-0 d-block">
-              <img id="" class="img-fluid" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
-            </div>
-          </div>  
-          <div class="position-absolute top-50 translate-middle-y col-lg-5" style="clear: none;">
-            <div class="p-4 rounded shadow" style="background-color: #f4f4f4;">
-              <h2 id="" class="m-0" style="text-transform: uppercase; font-weight: 330;">Habitación Recomendada</h2>
-              <div id="" class="mt-3 d-block">
-                Reconocido por nuestros incomparables bufets de desayuno, almuerzo y merienda, La Vista Restasurant ofrece una maravillosa vista al océano Pacífico, servicio personalizado y cocina moderna de nuestro equipo de creativos chefs peruanos.
-              </div>
-              <a class="btn btn-primary mt-3" href="#">Más información</a>
+              <span class="btn btn-amarillo mt-4 pb-2 pt-2" href="#" style="font-weight: 500;">Más información</span>
             </div>
           </div>
         </div>
@@ -323,29 +291,95 @@
 
       
 
-      <!-- Numeros -->
+      <!-- Img Footer -->
       <div class="parallax-container pb-3">
-        <div class="parallax-container" style="position: absolute;">
+        <div class="parallax-container" style="position: relative;">
           <div class="parallax-img"></div>
           <div class="parallax-overlay">
-            <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Habitaciones y Suites</strong></h3>
-            <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-            <p style="text-align: center;">LOREM IPSUM DOLORE</p>
-            <br>
+            <div class="container-fluid position-absolute" style="top: 45%;">
+              <h3 class="text-center" style="font-weight: 350; color: #fff; font-size: 3em;">DESCUBRE HUANCAYO</h3>
+              <hr class="mb-4" style="color: #fff; width: 20%; height: 0.2em; border-radius: 0.1em; margin: auto; opacity: 1 !important;">
+              <br>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Footer -->
-      <div class="mt-4" id="Translation">
-
-        <h3>The standard Lorem Ipsum passage, used since the 1500s</h3><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3><p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <h3>1914 translation by H. Rackham</h3>
-        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-        <h3>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
-        <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-        <h3>1914 translation by H. Rackham</h3>
-        <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+      <div class="container-completo">
+        <footer class="d-block">
+          <div class="footer-top">
+            <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
+              <div class="col-6">
+                <img src="img/LogoHotel_del_Valle.jpg" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 5em; width: auto;">
+              </div>
+              <div class="d-flex justify-content-end col-6">
+                <div class="d-inline-flex justify-content-end justify-content-sm-start align-items-center flex-wrap">
+                  <h4 class="mr-1 mb-md-0" style="color: #fbfbfb;">Medios de pago</h4>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_visa32x32.png">
+                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_mastercard32x32.png">
+                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_americanexpress32x32.png">
+                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_dinersclub32x32.png">
+                  </div>
+                </div>
+              </div>
+              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+            </div>
+            <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
+              <div class="col-md-6 col-lg-6 mb-md-0 p-3 ps-0">
+                <div class="block-23 mb-3">
+                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">DEL VALLE HOTEL</h6>
+                  <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8 minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar acogedor y confortable en tu visita a esta hermosa ciudad.</p>
+                </div>
+                <br>
+                <div class="d-flex align-items-center">
+                  <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
+                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
+                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2 mb-md-0 p-3">
+                <div class="block-23 mb-3">
+                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">ENLACES ÚTILES</h6>
+                  <ul class="p-0" style="list-style: none; color: #fbfbfb;">
+                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
+                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
+                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
+                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Ofertas</span></a></li>
+                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 mb-md-0 p-3 pe-0">
+                <div class="block-23 mb-3">
+                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
+                  <ul class="p-0" style="list-style: none; color: #fbfbfb;">
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51964807723"><i class="fa-solid fa-phone"></i><span class="text">+51 964 807 723</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51964807723?text=Quisiera%20información%20sobre%20el%20hotel"><i class="fa-brands fa-whatsapp"></i><span class="text">+51 964 807 723</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
+                  </ul>
+                </div>
+                <form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Ingrese su correo electrónico">
+                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
+                </div>
+                </form>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="footer-bottom" style="margin-top: -1px;">
+            <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
+              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+              <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">Todos los derechos reservados - ©2022 Del Valle Hotel</p>
+              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+            </div>
+          </div>
+        </footer>
       </div>
 
 

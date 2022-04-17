@@ -1,5 +1,7 @@
 function LinkTours(clicked_id) {
-    
+    const link1 = document.getElementById("parqueidentidad_link");
+    const link2 = document.getElementById("plazadearmas_link");
+    const link3 = document.getElementById("cerritodelalibertad_link");
     if (clicked_id == "parqueidentidad_link") {
         var imgpiw = document.getElementById("parqueidentidad_img")
         var imgccc = document.getElementById("plazadearmas_img")
@@ -19,7 +21,10 @@ function LinkTours(clicked_id) {
         $(textoccc).fadeOut("slow");
         $(textocdl).fadeOut("slow");
         $(textopiw).fadeIn("slow");
-        
+
+        link1.classList.add("active_link")
+        link2.classList.remove("active_link")
+        link3.classList.remove("active_link")
         imgpiw.classList.remove("d-none");
         imgccc.classList.add("d-none");
         imgcdl.classList.add("d-none");
@@ -49,7 +54,10 @@ function LinkTours(clicked_id) {
         $(textocdl).fadeOut("slow");
         $(textopiw).fadeOut("slow");
         $(textoccc).fadeIn("slow");
-
+        
+        link1.classList.remove("active_link")
+        link2.classList.add("active_link")
+        link3.classList.remove("active_link")
         imgccc.classList.remove("d-none");
         imgpiw.classList.add("d-none");
         imgcdl.classList.add("d-none");
@@ -80,6 +88,9 @@ function LinkTours(clicked_id) {
         $(textopiw).fadeOut("slow");
         $(textocdl).fadeIn("slow");
 
+        link1.classList.remove("active_link")
+        link2.classList.remove("active_link")
+        link3.classList.add("active_link")
         imgcdl.classList.remove("d-none");
         imgpiw.classList.add("d-none");
         imgccc.classList.add("d-none");
