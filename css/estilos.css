@@ -7,9 +7,24 @@ body{
     margin-top: 0;
 }
 
-.logo{
-    width: 6em;
+.logo-normal{
+    width: 7em;
     height: auto;
+    display: block;
+}
+
+.logo-sticky{
+  width: 7em;
+  height: auto;
+  display: none;
+}
+
+.sticky-header-active #header .logo-normal {
+	opacity: 0;
+}
+
+.sticky-header-active #header .header-logo .logo-sticky {
+	opacity: 1;
 }
 
 .letra-grande{
@@ -55,6 +70,20 @@ body{
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.map-responsive-large{
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+}
+
+.map-responsive-large iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .marco {
@@ -686,3 +715,30 @@ body{
   box-shadow: 0 0 0 0.25rem #ffb04923 !important;
 }
 
+@media (max-width: 991px) {
+  .desplegable {
+    margin: 0 !important;
+    width: 90% !important;
+  }
+  .desplegable-img{
+    width: 50%;
+  }
+}
+
+.text-nearby{
+  font-size: 1.4em;
+  color: #727272;
+  font-weight: 500;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.text-box-nearby{
+  text-decoration: none;
+}
+
+.text-box-nearby:hover .text-nearby{
+  color: #d69c4f;
+  cursor: pointer;
+  background-color: #d69b4f18;
+}

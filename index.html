@@ -15,35 +15,37 @@
     
     <!-- Barra de Navegación -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="background-color: #f5f5f5 !important;">
-        <div class="container-fluid" style="width: auto !important;">
-          <a class="navbar-brand" href="#"><img class="image-fluid logo" src="img/LogoHotel_del_Valle.jpg" alt="LogoHotel_del_Valle.jpg"></a>
+        <div class="container-fluid desplegable" style="width: auto;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand desplegable-img" href="#">
+            <img id="myLogo" class="image-fluid logo-normal" src="img/logo_general.png" alt="LogoHotel_del_Valle.jpg">
+          </a>  
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link active letra-grande" aria-current="page" href="#">Inicio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link letra-grande" href="#">Sobre Nosotros</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item mx-2 dropdown">
                 <a class="nav-link dropdown-toggle letra-grande" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Habitaciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item letra-grande" href="#">Accesibles</a></li>
-                  <li><a class="dropdown-item letra-grande" href="#">Familiares</a></li>
+                  <li><a class="dropdown-item letra-grande" href="#">Matrimoniales</a></li>
                   <li><a class="dropdown-item letra-grande" href="#">Suites</a></li>
-                  <li><a class="dropdown-item letra-grande" href="#">Ejecutivas</a></li>
+                  <li><a class="dropdown-item letra-grande" href="#">Familiares</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link letra-grande" href="#">Ofertas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link letra-grande" href="#">Encuéntranos</a>
+              <li class="nav-item mx-2">
+                <a class="nav-link letra-grande" href="encuentranos.html">Encuéntranos</a>
               </li>
             </ul>
           </div>
@@ -58,13 +60,13 @@
             <button type="button" data-bs-target="#carruselprincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="height: 32em;display: flex;">
-            <div class="parallax" style="background-image: url('img/cuarto1.jpg');"></div>
+          <div class="carousel-item active" style="height: 36em;display: flex;">
+            <div class="parallax" style="background-image: url('img/frontis_dia.jpg');"></div>
           </div>
-          <div class="carousel-item" style="height: 32em;display: flex;">
-            <div class="parallax" style="background-image: url('img/cuarto2.jpg');"></div>
+          <div class="carousel-item" style="height: 36em;display: flex;">
+            <div class="parallax" style="background-image: url('img/30048ddade75cd75.webp');"></div>
           </div>
-          <div class="carousel-item" style="height: 32em;display: flex;">
+          <div class="carousel-item" style="height: 36em;display: flex;">
             <div class="parallax" style="background-image: url('img/cuarto3.jpg');"></div>
           </div>
         </div>
@@ -78,7 +80,7 @@
         </button>
       </div>
 
-      <!-- Reumen y mapa -->
+      <!-- Resumen y mapa -->
       <div class="container-fluid texture pb-3">
         <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Tu estancia más agradable</strong></h3>
         <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
@@ -86,9 +88,13 @@
           <div class="row justify-content-center align-items-center">
             <div class="col-md-7">
               <p class="g-fs-14 g-fs-md-18" style="text-align: justify;">
-                Hotel del Valle tiene una excelente ubicación cerca de la Universidad Continental y de las principales avenidas de Huancayo. Cuenta con una impresionante e imponente vista tanto diurna como nocturna, con un estilo moderno complementado con una decoración elegante y natural. Además de contar con una infraestructura y el personal adecuado para hacer que tu estadía sea cómoda y agradable.
-                Este hotel brinda un espacio turístico y acogedor para quienes buscan una experiencia inolvidable con el compromiso de brindar una atención de primera, con pulcritud y siendo muy preocupados en los detalles.
+                Del Valle Hotel, tiene una excelente ubicación a 8 minutos del centro de Huancayo, en una de las principales avenidas de la ciudad. Cuenta con una impresionante vista tanto diurna como nocturna, con un estilo moderno complementado con una decoración elegante y natural. 
+                Tenemos la infraestructura y el personal adecuado para hacer que tu estadía sea una experiencia inolvidable. 
+                Ven y disfruta del Valle del Mantaro, nosotros nos aseguraremos de brindarte un lugar acogedor y confortable.
               </p>
+              <div class="container-fluid d-flex justify-content-center">
+                <span class="btn btn-amarillo pb-2 pt-2 px-4 mb-4" href="#" style="font-weight: 500;">Leer más</span>
+              </div>
             </div>
             <div class="col-md-1 text-center py-1">
               <i class="fa-solid fa-angle-right hide show" style="color: #d69c4f!important; font-size: 3em;"></i>
@@ -96,7 +102,7 @@
             <div class="col-md-4">
               <div class="map-responsive marco">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.7449911354007!2d-75.20165729084933!3d-12.046278084659983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9775d8a93e7b%3A0xbfdc6cbdc188cabd!2sHotel%20Del%20Valle!5e0!3m2!1ses-419!2spe!4v1649734593470!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <a id="link" href="#">
+                <a id="link" href="encuentranos.html">
                   <div class="overlay">
                     <div>
                       <i class="fa-solid fa-location-dot" style="color: #fff!important;"></i><b> Ubicación</b>

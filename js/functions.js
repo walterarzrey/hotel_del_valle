@@ -105,4 +105,16 @@ function LinkTours(clicked_id) {
         return false;
     }
     
-} 
+}
+
+window .onscroll = function () {
+    scrollFunction();
+}
+
+function scrollFunction() {
+    var image = document.getElementById("myLogo");
+            if (document.documentElement.scrollTop > 0)
+                image.src = "img/logo_largo_v2.png";
+            else
+                image.src = "img/logo_general.png";
+}
