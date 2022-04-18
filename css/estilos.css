@@ -725,7 +725,7 @@ body{
   }
 }
 
-.text-nearby{
+.text-nearby, .text-nearby-m{
   font-size: 1.4em;
   color: #727272;
   font-weight: 500;
@@ -737,8 +737,14 @@ body{
   text-decoration: none;
 }
 
-.text-box-nearby:hover .text-nearby{
+.text-box-nearby:hover .text-nearby, .text-box-nearby:hover .text-nearby-m{
   color: #d69c4f;
   cursor: pointer;
   background-color: #d69b4f18;
+}
+
+@media (max-width: 767px) {
+  .text-nearby-m {
+    justify-content: flex-end;
+  }
 }
