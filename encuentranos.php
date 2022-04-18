@@ -19,13 +19,13 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand desplegable-img" href="index.html">
+          <a class="navbar-brand desplegable-img" href="index.php">
             <img id="myLogo" class="image-fluid logo-normal" src="img/logo_general.png" alt="LogoHotel_del_Valle.jpg">
           </a>  
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item mx-2">
-                <a class="nav-link active letra-grande" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active letra-grande" aria-current="page" href="index.php">Inicio</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link letra-grande" href="#">Sobre Nosotros</a>

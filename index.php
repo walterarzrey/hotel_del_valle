@@ -45,7 +45,7 @@
                 <a class="nav-link letra-grande" href="#">Ofertas</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link letra-grande" href="encuentranos.html">Encuéntranos</a>
+                <a class="nav-link letra-grande" href="encuentranos.php">Encuéntranos</a>
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@
             <div class="col-md-4">
               <div class="map-responsive marco">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.7449911354007!2d-75.20165729084933!3d-12.046278084659983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9775d8a93e7b%3A0xbfdc6cbdc188cabd!2sHotel%20Del%20Valle!5e0!3m2!1ses-419!2spe!4v1649734593470!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <a id="link" href="encuentranos.html">
+                <a id="link" href="encuentranos.php">
                   <div class="overlay">
                     <div>
                       <i class="fa-solid fa-location-dot" style="color: #fff!important;"></i><b> Ubicación</b>
