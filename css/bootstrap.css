@@ -1951,6 +1951,71 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
+@media (min-width: 1900px) {
+  .col-uxl {
+    flex: 1 0 0%;
+  }
+  .col-uxl-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+  .col-uxl-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-uxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-uxl-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-uxl-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-uxl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-uxl-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-uxl-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-uxl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-uxl-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-uxl-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-uxl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
@@ -7375,6 +7440,10 @@ textarea.form-control-lg {
   margin-left: 1rem !important;
 }
 
+.ms-n3 {
+  margin-left: -1rem !important;
+}
+
 .ms-4 {
   margin-left: 1.5rem !important;
 }
@@ -11260,5 +11329,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+@media (max-width: 991px) {
+  .no-spaces {
+      padding: 0 !important;
+  }
+  .footer-top-space{
+    margin-top: -1rem !important;
+  }
+  .footer-bottom-space{
+    padding-top: 2rem !important;
+  }
+  .footer-bottom-space-1{
+    padding-right: 2rem !important;
+  }
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */
