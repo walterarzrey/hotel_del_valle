@@ -721,8 +721,6 @@ body{
   box-shadow: 0 0 0 0.25rem #ffb04923 !important;
 }
 
-pantalla
-
 .text-nearby, .text-nearby-m{
   font-size: 1.4em;
   color: #727272;
@@ -732,7 +730,7 @@ pantalla
 }
 
 .text-box-nearby{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .text-box-nearby:hover .text-nearby, .text-box-nearby:hover .text-nearby-m{
@@ -847,5 +845,52 @@ pantalla
 @media (max-width: 321px) {
   .dropdown-rooms {
     margin-top: 18rem !important;
+  }
+}
+
+.card-reseña{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #eeeeee;
+  background-clip: border-box;
+  border: 1px solid rgba(114, 114, 114, 0.125);
+  border-radius: 0.25rem;
+}
+
+.avatar{
+  display: flex;
+  height: 120px;
+  width: 120px;
+  border: 2px dotted #d69c4f;
+}
+
+@media (max-width: 769px) {
+  .viñeta{
+    position: relative !important;
+    margin: 0 auto !important;
+    flex: 0 0 auto;
+    width: auto !important;
+  }
+
+  .viñeta2{
+    position: relative !important;
+    margin: 0 auto !important;
+  }
+
+  .viñeta > img{
+    height: 5rem;
+  }
+
+  .container-reseña{
+    flex: 0 0 auto !important;
+    width: 83.33333333% !important;
+  }
+
+  .card-reseña{
+    flex: 0 0 auto !important;
+    width: 100% !important;
   }
 }
