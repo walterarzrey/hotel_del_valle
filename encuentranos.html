@@ -174,11 +174,14 @@
                     <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
                   </ul>
                 </div>
-                <form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                <input type="text" class="form-control rounded-left" placeholder="Ingrese su correo electrónico">
-                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
-                </div>
+                <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="subscribe-form">
+                  <div class="form-group d-flex">
+                  <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
+                  <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
+                  </div>
+
+                  <input type="hidden" name="_next" value="#">
+                  <input type="hidden" name="_captcha" value="false">
                 </form>
               </div>
             </div>

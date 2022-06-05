@@ -161,7 +161,7 @@
                 <a class="link_tours" id="Doble_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Accesible<br>Doble</a>
               </li>
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
-                <a class="link_tours" id="Familiar_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>familiar</a>
+                <a class="link_tours" id="Familiar_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Familiar</a>
               </li>
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
                 <a class="link_tours" id="Matrimonial_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Matrimonial</a>
@@ -1013,16 +1013,16 @@
       <div class="container-fluid p-0" style="max-width: 1200px;">
         <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Consulta por una Habitación</strong></h3>
         <hr class="mb-4" style="color: #000000; width: 18%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-        <form class="row g-3 needs-validation" style="margin: 0 !important;" novalidate>
+        <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="row g-3 needs-validation" style="margin: 0 !important;" novalidate>
           <div class="form-floating col-sm-12 col-md-6 px-4">
-            <input type="text" class="form-control reserva" id="ValidationNombre" placeholder="Nombres y Apellidos" required>
+            <input type="text" name="Nombres" class="form-control reserva" id="ValidationNombre" placeholder="Nombres y Apellidos" required>
             <label class="px-4" for="ValidationNombre" >Nombres y Apellidos</label>
             <div class="invalid-feedback">
               Ingrese su Nombre(s) y Apellido(s).
             </div>
           </div>
           <div class="form-floating col-sm-12 col-md-6 select px-4">
-            <select class="form-select reserva" id="ValidationRoom" style="cursor: pointer;" required>
+            <select name="Habitación" class="form-select reserva" id="ValidationRoom" style="cursor: pointer;" required>
               <option selected disabled value=""></option>
               <option value="1">Accesible Individual</option>
               <option value="2">Accesible Doble</option>
@@ -1037,28 +1037,28 @@
             </div>
           </div>
           <div class="form-floating col-sm-12 col-md-6 px-4">
-            <input type="email" class="form-control reserva" id="ValidationEmail" placeholder="Correo electrónico" required>
+            <input type="email" name="Correo" class="form-control reserva" id="ValidationEmail" placeholder="Correo electrónico" required>
             <label class="px-4" for="ValidationEmail">Correo electrónico</label>
             <div class="invalid-feedback">
               Por favor ingrese un correo valido.
             </div>
           </div>
           <div class="form-floating col-sm-12 col-md-6 px-4">
-            <input type="text" class="form-control reserva" minlength="9" maxlength="9" id="ValidationCell" onkeypress="return onlyNumbers(event)" placeholder="Número de teléfono" required>
+            <input type="text" name="Telefono" class="form-control reserva" minlength="9" maxlength="9" id="ValidationCell" onkeypress="return onlyNumbers(event)" placeholder="Número de teléfono" required>
             <label class="px-4" for="ValidationCell">Número de teléfono</label>
             <div class="invalid-feedback">
               Por favor ingrese un teléfono valido.
             </div>
           </div>
           <div class="form-floating col-sm-12 col-md-6 px-4">
-            <input type="text" id="ValidationDate" class="form-control reserva" min="" onfocus="minDate(), (this.type='date')" onfocusout="validateDate()" placeholder="Fecha de alojamiento" required>
+            <input type="text" name="Fecha" id="ValidationDate" class="form-control reserva" min="" onfocus="minDate(), (this.type='date')" onfocusout="validateDate()" placeholder="Fecha de alojamiento" required>
             <label class="px-4" for="ValidationDate">Fecha de alojamiento</label>
             <div class="invalid-feedback">
               Por favor ingrese una fecha.
             </div>
           </div>
           <div class="form-floating col-sm-12 col-md-6 px-4">
-            <textarea class="form-control reserva" id="ValidationTextArea" placeholder="Mensaje (Opcional)"></textarea>
+            <textarea class="form-control reserva" name="Mensaje" id="ValidationTextArea" placeholder="Mensaje (Opcional)"></textarea>
             <label class="px-4" for="ValidationTextArea">Mensaje (Opcional)</label>
           </div>
           <div class="col-sm-12 col-md-6 px-4" style="margin-top: 2rem;">
@@ -1084,13 +1084,16 @@
           <div class="col-sm-12 col-md-6" style="margin-top: 2rem;">
             <div class="form-group">
               <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-              <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+              <input class="form-control d-none" data-recaptcha="true" data-error="Please complete the Captcha">
               <div class="help-block with-errors"></div>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 m-0 px-4 mt-3">
             <button class="btn btn-amarillo" type="submit" style="width: 100%;" onclick="ValidarForm()">ENVIAR</button>
           </div>
+
+          <input type="hidden" name="_next" value="#">
+          <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
     </div>
@@ -1165,11 +1168,14 @@
                     <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
                   </ul>
                 </div>
-                <form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                <input type="text" class="form-control rounded-left" placeholder="Ingrese su correo electrónico">
-                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
-                </div>
+                <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="subscribe-form">
+                  <div class="form-group d-flex">
+                  <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
+                  <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
+                  </div>
+
+                  <input type="hidden" name="_next" value="#">
+                  <input type="hidden" name="_captcha" value="false">
                 </form>
               </div>
             </div>
