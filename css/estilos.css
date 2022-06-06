@@ -958,7 +958,7 @@ body{
 
 .fade-in{
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 600ms ease-in;
 }
 
 .fade-in.appear{
@@ -967,7 +967,7 @@ body{
 
 .primer-fade{
   opacity: 0;
-  transition: opacity 300ms ease-in;
+  transition: opacity 250ms ease-in;
 }
 
 .primer-fade.appear{
@@ -980,7 +980,7 @@ body{
 }
 
 .slide-in{
-  transition: transform 300ms ease-in, opacity 300ms ease-in;
+  transition: transform 600ms ease-in, opacity 600ms ease-in;
 }
 
 .slide-in.appear{
