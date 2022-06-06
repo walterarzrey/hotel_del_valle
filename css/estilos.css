@@ -967,7 +967,7 @@ body{
 
 .primer-fade{
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 .primer-fade.appear{
@@ -975,12 +975,12 @@ body{
 }
 
 .from-down{
-  transform: translateY(60%);
+  transform: translateY(50%);
   opacity: 0;
 }
 
 .slide-in{
-  transition: transform 400ms ease-in, opacity 400ms ease-in;
+  transition: transform 300ms ease-in, opacity 300ms ease-in;
 }
 
 .slide-in.appear{

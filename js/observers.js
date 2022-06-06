@@ -9,8 +9,8 @@ const sectionOneOptions = {
 };
 
 const appearOptions = {
-  threshold: 0.4,
-  rootMargin: "0px 0px -70px 0px"
+  threshold: 0.5,
+  rootMargin: "0px 0px 200px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver(function(
