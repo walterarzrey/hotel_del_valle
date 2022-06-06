@@ -1,5 +1,7 @@
 body{
  font-family: 'proxima-nova', sans-serif;
+ margin: 0;
+ overflow-X: hidden;
 }
 
 .dropdown:hover .dropdown-menu{
@@ -137,6 +139,41 @@ body{
     background-repeat: no-repeat;
 }
 
+.parallax-container-nosotros{
+  height: 40em;
+  max-height: 40em;
+  min-height: auto;
+  width: 100%;
+}
+
+.parallax-img-nosotros{
+  background-image: url('../img/frontis_dia.jpg');
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .parallax-container-nosotros{
+    height: 25em !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .parallax-container-nosotros{
+    height: 18em !important;
+  }
+}
+
+@media (max-width: 451px) {
+  .parallax-overlay > div > h3{
+    font-size: 2rem !important;
+  }
+}
+
 .parallax-overlay{
     position: absolute;
     top: 0;
@@ -156,6 +193,22 @@ body{
     border-color: transparent !important;
     aspect-ratio:1/1;
     box-shadow:inset 0px 0px 0px 2px lightgrey;
+    transition: 0.2s ease-in-out;
+}
+
+.item-serv:hover > span > span > i{
+  color: #d69c4f !important;
+  transition: 0.2s ease-in-out;
+}
+
+.item-serv:hover > p{
+  color: #d69c4f !important;
+  transition: 0.2s ease-in-out;
+}
+
+.item-serv:hover{
+  box-shadow:inset 0px 0px 0px 2px #d69c4f;
+  transition: 0.2s ease-in-out;
 }
 
 @media (min-width: 300px) {
@@ -893,4 +946,44 @@ body{
     flex: 0 0 auto !important;
     width: 100% !important;
   }
+
+  .card-reseña > div{
+    justify-content: center !important;
+  }
+
+  .card-reseña > div > div > p{
+    text-align: center !important;
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+.primer-fade{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.primer-fade.appear{
+  opacity: 1;
+}
+
+.from-down{
+  transform: translateY(60%);
+  opacity: 0;
+}
+
+.slide-in{
+  transition: transform 400ms ease-in, opacity 400ms ease-in;
+}
+
+.slide-in.appear{
+  transform: translateY(0);
+  opacity: 1;
 }

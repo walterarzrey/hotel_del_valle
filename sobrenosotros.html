@@ -12,7 +12,7 @@
     <script src="js/functions.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
-<body>
+<body onload="Carga()">
 
     <!-- Barra de Navegación -->
     <nav id="navorigin" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="background-color: #f5f5f5 !important;">
@@ -36,10 +36,10 @@
                   Habitaciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item letra-grande" href="habitaciones.html">Accesibles</a></li>
-                  <li><a class="dropdown-item letra-grande" href="habitaciones.html">Matrimoniales</a></li>
-                  <li><a class="dropdown-item letra-grande" href="habitaciones.html">Suites</a></li>
-                  <li><a class="dropdown-item letra-grande" href="habitaciones.html">Familiares</a></li>
+                  <li><a id="Accesibles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Accesibles</a></li>
+                  <li><a id="Familiares" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Familiares</a></li>
+                  <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Matrimoniales</a></li>
+                  <li><a id="Suites" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Suites</a></li>     
                 </ul>
               </li>
               <li class="nav-item mx-2">
@@ -50,12 +50,21 @@
         </div>
     </nav>
 
-    <!-- Imagen principal -->
-    <div id="container-completo">
-      <div class="" style="max-height: 40em; min-height: auto; display: flex;">
-        <img src="img/frontis_dia.jpg" alt="frontis" style="width: 100%;">
+  <div id="primer-fade" class="primer-fade">
+      <!-- Img Principal -->
+      <div class="parallax-container-nosotros pb-3">
+        <div class="parallax-container-nosotros" style="position: relative;">
+          <div class="parallax-img-nosotros"></div>
+          <div class="parallax-overlay">
+            <div class="container-fluid position-absolute" style="top: 45%;">
+              <h3 class="text-center" style="font-weight: 350; color: #fff; font-size: 3rem;">SOBRE NOSOTROS</h3>
+              <hr class="mb-4" style="color: #fff; width: 20%; height: 0.2em; border-radius: 0.1em; margin: auto; opacity: 1 !important;">
+              <br>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
 
     <!-- Nosotros -->
     <div class="container-fluid texture pb-5" style="width: 100%;">
@@ -70,17 +79,16 @@
           </div>
         </div>
       </div>
-    </div>
 
     <!-- Imagen secundaria -->
-    <div id="container-completo">
+    <div id="container-completo" class="fade-in">
       <div class="" style="max-height: 40em; min-height: auto; display: flex;">
         <img src="img/turistico secundario.jpg" alt="frontis" style="width: 100%;">
       </div>
     </div>
 
     <!-- Responsabilidad -->
-    <div class="container-fluid texture pb-5" style="width: 100%;">
+    <div class="container-fluid texture pb-5 fade-in" style="width: 100%;">
       <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Responsabilidad Social</strong></h3>
       <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
       <div class="container-fluid" style="max-width: 1400px;">
@@ -90,14 +98,15 @@
               </p>
           </div>
         </div>
-      </div>
     </div>
 
   <!-- Reseñas -->
   <div class="container-fluid pb-5" style="width: 100%;">
-    <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Algunas reseñas</strong></h3>
-    <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-    <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mb-4" style="max-width: 1400px;">
+    <div class="fade-in">
+      <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Algunas reseñas</strong></h3>
+      <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
+    </div>
+    <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mb-4 slide-in from-down" style="max-width: 1400px;">
       <div class="viñeta col-2">
         <img src="img/Viñeta.png" alt="">
       </div>
@@ -115,7 +124,7 @@
       </div>
       </div>
 
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4" style="max-width: 1400px;">
+      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
         <div class="viñeta col-2">
           <img src="img/Viñeta.png" alt="">
         </div>
@@ -133,7 +142,7 @@
         </div>
         </div>
       
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4" style="max-width: 1400px;">
+      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
         <div class="viñeta col-2">
           <img src="img/Viñeta.png" alt="">
         </div>
@@ -151,7 +160,7 @@
         </div>
         </div>
 
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4" style="max-width: 1400px;">
+      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
         <div class="viñeta col-2">
           <img src="img/Viñeta.png" alt="">
         </div>
@@ -168,8 +177,6 @@
           </div>
         </div>
         </div>
-
-    </div>
   </div>
 
     <!-- Footer -->
@@ -250,8 +257,9 @@
         </div>
         </footer>
     </div>
-    
 
+  </div>
 <script src="js/bootstrap.js"></script>
+<script src="js/observers.js"></script>
 </body>
 </html>
