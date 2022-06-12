@@ -129,12 +129,6 @@
                     $popup.removeClass('active');
                 }
             }
-
-            function closePopup() {
-                if ($popup.hasClass('active')) {
-                    $popup.removeClass('active');
-                }
-            }
         }
 
         if (settings.zIndex) {

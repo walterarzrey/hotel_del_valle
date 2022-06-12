@@ -567,7 +567,16 @@ body{
   font-weight: 700;
   color: rgb(140, 140, 140);
   position: relative;
+  text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .link_tours {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 
 .link_tours:hover, .link_tours:active{
   color: #d69c4f;

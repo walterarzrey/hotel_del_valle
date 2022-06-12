@@ -152,7 +152,7 @@
                 <i class="fa-solid fa-utensils" style="font-size: 3em; color: rgb(146, 146, 146);"></i>
               </span>
             </span>
-            <p data-testid="grid-item-label-4" class="p-1" style="color: gray; font-size:0.8em; text-align: center;"><b>Servicio de comida</b></p>
+            <p data-testid="grid-item-label-4" class="p-1" style="color: gray; font-size:0.8em; text-align: center;"><b>Servicio de desayuno</b></p>
           </li>
           <li class="p-4 card justify-content-center align-items-center col-xsm-6 col-sm-6 col-md-3 col-lg-3 item-serv" data-testid="grid-item-5" aria-label="Free parking">
             <span class="" aria-hidden="true">
@@ -257,14 +257,17 @@
         <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
         <div class="d-block mb-4 mt-4">
           <ul class="d-flex flex-wrap lista_tours p-3" style="list-style: none;">
-            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-3 col-lg-3">
               <a class="link_tours active_link" id="parqueidentidad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Parque de la Identidad Wanka</a>
             </li>
-            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-3 col-lg-3">
               <a class="link_tours" id="plazadearmas_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Plaza de Armas Huancayo</a>
             </li>
-            <li class="d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-3">
+            <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-3 col-lg-3">
               <a class="link_tours" id="cerritodelalibertad_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Cerrito de la Libertad</a>
+            </li>
+            <li class="d-flex flex-wrap justify-content-center position-relative col-md-3 col-lg-3">
+              <a class="link_tours" id="parquemates_link" href="javascript:void(0);" onclick="LinkTours(this.id);">Parque de los Mates Burilados</a>
             </li>
           </ul>
         </div>
@@ -274,6 +277,7 @@
               <img id="parqueidentidad_img" class="img_tours img-fluid d-block" src="img/parque_identidad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
               <img id="plazadearmas_img" class="img_tours img-fluid d-none" src="img/plaza_huancayo.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
               <img id="cerritodelalibertad_img" class="img_tours img-fluid d-none" src="img/cerrito_libertad.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
+              <img id="parquemates_img" class="img_tours img-fluid d-none" src="img/parque_mates.jpg" alt="hall.jpg" style="height: 32em; width: 100%;">
             </div>
           </div>  
           <div class="col-md-6 col-lg-5 text_tours" style="clear: none;">
@@ -297,6 +301,13 @@
                 Es un cerro ubicado a 7 minutos en auto desde el hotel. Es un área urbana que posee diversas instalaciones de turismo y recreación, incluyendo una capilla donde se celebran matrimonios, una piscina pública, el único zoológico de la ciudad y un mirador natural con una imponente y hermosa vista de toda la ciudad de Huancayo. Se encuentra comunicado directamente con el centro de la ciudad por la "Av. Giráldez".
                 <div>
                   <a class="btn btn-amarillo mt-4 pb-2 pt-2" href="https://goo.gl/maps/AEzQFbwcTnGFGDSf9" target="_blank" style="font-weight: 500;">Más información</a>
+                </div>
+              </div>
+              <h2 id="parquemates_titulo" class="m-0 d-none" style="text-transform: uppercase; font-weight: 330; text-align: center;">Parque de los mates Burilados</h2>
+              <div id="parquemates_texto" class="mt-3 d-none" style="text-align: justify;">
+                Ubicado a solo 15 minutos en auto desde el hotel. Es un bello parque temático inspirado en la artesanía del poblado de Cochas, que son los mates burilados. Cuenta con diversas instalaciones de turismo y recreación, incluyendo restaurantes típicos dentro y fuera del recinto y un mirador urbano en frente del parque, de donde se puede observartodo el poblado de Cochas.
+                <div>
+                  <a class="btn btn-amarillo mt-4 pb-2 pt-2" href="https://goo.gl/maps/MFmRoL5Ax8JhFtRw7" target="_blank" style="font-weight: 500;">Más información</a>
                 </div>
               </div>
             </div>
