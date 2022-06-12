@@ -53,10 +53,16 @@
 
 .floating-wpp .floating-wpp-popup.active {
     padding: 0 12px 12px 12px;
-    width: 300px;
+    width: 400px;
     height: auto;
     bottom: 82px;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .floating-wpp .floating-wpp-popup.active {
+        width: 300px !important;
+    }
 }
 
 .floating-wpp .floating-wpp-popup .floating-wpp-message {
@@ -86,7 +92,7 @@
 }
 
 .floating-wpp-head > span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .close {
@@ -99,6 +105,7 @@
     padding: 0 15px;
     display: flex;
     align-items: center;
+    font-size: 1.1rem;
 }
 
 .floating-wpp .floating-wpp-input-message textarea {
