@@ -133,10 +133,18 @@ function Load(clicked_id){
     localStorage.setItem("storageRoom", loadroom);
 }
 
+function LoadRoom(){
+    var $window = $(window);
+    if ($window.width() < 1000) {
+        LinkRoomsS();
+    }else{
+        LinkRoomsL();
+    }
+}
+
 function LinkRoomsL(clicked_id) {
     var loadedroom = localStorage.getItem("storageRoom");
     console.log(loadedroom);
-    localStorage.clear();
     const linknav = document.getElementById(clicked_id);
     const link1 = document.getElementById("Individual_link");
     const link2 = document.getElementById("Doble_link");
@@ -411,12 +419,12 @@ function LinkRoomsL(clicked_id) {
     }else{
         return false;
     }
+    localStorage.clear();
 }
 
 function LinkRoomsS(clicked_id) {
     var loadedroom = localStorage.getItem("storageRoom");
     console.log(loadedroom);
-    localStorage.clear();
     const linknav = document.getElementById(clicked_id);
     const linkS1 = document.getElementById("IndividualS_link");
     const linkS2 = document.getElementById("DobleS_link");
@@ -696,6 +704,7 @@ function LinkRoomsS(clicked_id) {
     }else{
         return false;
     }
+    localStorage.clear();
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields

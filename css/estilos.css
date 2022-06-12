@@ -83,7 +83,15 @@ body{
 .map-responsive-large{
   overflow:hidden;
   padding-bottom:40%;
+  margin-top: 5%;
   position:relative;
+  height:0;
+}
+
+@media (max-width: 768px) {
+  .map-responsive-large{
+    padding-bottom:100% !important;
+  }
 }
 
 .map-responsive-large iframe{

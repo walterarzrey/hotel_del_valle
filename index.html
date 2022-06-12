@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/bd0bb73cdd.js" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="floating-whatsapp/floating-wpp.js"></script>
+    <link rel="stylesheet" href="floating-whatsapp/floating-wpp.css">
   </head>
 <body onload="Carga()">
     
@@ -397,8 +399,22 @@
     </div>
   </div>
 
+  <div id="myDiv" style="z-index: 99;"></div>
+
 
 <script src="js/bootstrap.js"></script>
 <script src="js/observers.js"></script>
 </body>
+<script type="text/javascript">
+  $(function () {
+    $('#myDiv').floatingWhatsApp({
+      phone: '51995585320',
+      popupMessage: 'Hola, ¿Cómo puedo ayudarte? 😊',
+      showPopup: true,
+      headerTitle: 'Del Valle Hotel Chat',
+      backgroundColor: '#d69c4f',
+      headerColor: '#d69c4f'
+    });
+  });
+</script>
 </html>
