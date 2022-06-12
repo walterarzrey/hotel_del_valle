@@ -2,7 +2,7 @@
     $.fn.floatingWhatsApp = function (options) {
         var settings = $.extend({
             phone: '',
-            message: '',
+            message: 'Hola, Quisiera información sobre el hotel.',
             size: '72px',
             backgroundColor: '',
             position: 'right',
@@ -51,7 +51,7 @@
                 openPopup();
             }
             else {
-                sendWhatsappMessage();
+                openPopup();
             }
         });
         //#endregion
@@ -115,10 +115,6 @@
                 sendWhatsappMessage();
             });
 
-            this.mouseenter(function () {
-                openPopup();
-            });
-
             if (settings.autoOpenTimeout > 0) {
                 setTimeout(function () {
                     openPopup();
@@ -129,6 +125,8 @@
                 if (!$popup.hasClass('active')) {
                     $popup.addClass('active');
                     $textarea.focus();
+                }else {
+                    $popup.removeClass('active');
                 }
             }
 
