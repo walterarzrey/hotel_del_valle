@@ -496,6 +496,11 @@ function LinkRoomsL(clicked_id) {
     localStorage.clear();
 }
 
+function openLinks() {
+    var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "block";
+}
+
 function LinkRoomsS(clicked_id) {
     var loadedroom = localStorage.getItem("storageRoom");
     console.log(loadedroom);
@@ -506,7 +511,9 @@ function LinkRoomsS(clicked_id) {
     const linkS4 = document.getElementById("MatrimonialS_link");
     const linkS5 = document.getElementById("QueenS_link");
     if (clicked_id == "IndividualS_link" || clicked_id == "Accesibles" || loadedroom == "Accesibles") {
-        document.getElementById("btnRooms").innerHTML = "Accesible Individual"
+        document.getElementById("btnRooms").innerHTML = "Accesible Individual";
+        var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "none";
         var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")
@@ -560,7 +567,9 @@ function LinkRoomsS(clicked_id) {
         iconqueS.classList.add("d-none");
 
     }else if (clicked_id == "DobleS_link") {
-        document.getElementById("btnRooms").innerHTML = "Accesible Doble"
+        document.getElementById("btnRooms").innerHTML = "Accesible Doble";
+        var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "none";
         var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")
@@ -614,7 +623,9 @@ function LinkRoomsS(clicked_id) {
         iconqueS.classList.add("d-none");
 
     }else if (clicked_id == "FamiliarS_link"  || clicked_id == "Familiares" || loadedroom == "Familiares") {
-        document.getElementById("btnRooms").innerHTML = "Tradicional Familiar"
+        document.getElementById("btnRooms").innerHTML = "Tradicional Familiar";
+        var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "none";
         var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")
@@ -668,7 +679,9 @@ function LinkRoomsS(clicked_id) {
         iconqueS.classList.add("d-none");
 
     }else if (clicked_id == "MatrimonialS_link"  || clicked_id == "Matrimoniales" || loadedroom == "Matrimoniales") {
-        document.getElementById("btnRooms").innerHTML = "Tradicional Matrimonial"
+        document.getElementById("btnRooms").innerHTML = "Tradicional Matrimonial";
+        var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "none";
         var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")
@@ -722,7 +735,9 @@ function LinkRoomsS(clicked_id) {
         iconqueS.classList.add("d-none");
 
     }else if (clicked_id == "QueenS_link" || clicked_id == "Suites" || loadedroom == "Suites") {
-        document.getElementById("btnRooms").innerHTML = "Superior Queen"
+        document.getElementById("btnRooms").innerHTML = "Superior Queen";
+        var dropdownLinks = document.querySelector(".dropdown-rooms");
+        dropdownLinks.style.display = "none";
         var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")

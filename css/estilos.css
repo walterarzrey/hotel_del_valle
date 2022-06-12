@@ -571,7 +571,7 @@ body{
 }
 
 @media (max-width: 1000px) {
-  .link_tours {
+  .link_tours_button {
     padding-left: 2rem;
     padding-right: 2rem;
   }
