@@ -38,10 +38,10 @@
                   Habitaciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a id="Accesibles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Accesibles</a></li>
-                  <li><a id="Familiares" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Familiares</a></li>
                   <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Matrimoniales</a></li>
-                  <li><a id="Suites" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Suites</a></li>     
+                  <li><a id="Dobles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Dobles</a></li>
+                  <li><a id="Triples" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Triples</a></li>
+                  <li><a id="Queen" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Queen</a></li>     
                 </ul>
               </li>
               <li class="nav-item mx-2">
@@ -183,81 +183,83 @@
 
     <!-- Footer -->
     <div class="container-completo">
-        <footer class="d-block">
+      <footer class="d-block">
         <div class="footer-top">
-            <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
             <div class="col-6 mt-2">
-                <img src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4em; width: auto;">
+              <img class="img-footer" src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4rem; width: auto;">
             </div>
             <div class="d-flex justify-content-end col-6">
-                <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
-                <h6 class="me-2 mb-md-0" style="color: #fbfbfb;">MEDIOS DE PAGO</h6>
-                <div class="d-flex flex-wrap align-items-center">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_visa32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_mastercard32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_americanexpress32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_dinersclub32x32.png">
+              <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
+                <h6 class="title-pagos mb-md-0" style="color: #fbfbfb; margin-right: 0.5rem;">MEDIOS DE PAGO</h6>
+                <div class="d-flex flex-wrap justify-content-end align-items-center">
+                  <img alt="" class="img-pagos m-1" src="img/visa.png">
+                  <img alt="" class="img-pagos m-1" src="img/mastercard.png">
+                  <img alt="" class="img-pagos m-1" src="img/americanexpress.png">
+                  <img alt="" class="img-pagos m-1" src="img/dinersclub.png">
+                  <img alt="" class="img-pagos m-1" src="img/yape.png">
+                  <img alt="" class="img-pagos m-1" src="img/plin.png">
                 </div>
-                </div>
+              </div>
             </div>
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
-            </div>
-            <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+          </div>
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
             <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-5 col-uxl-6 mb-md-0 p-3 ps-0 no-spaces">
-                <div class="block-23 mb-3">
+              <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">DEL VALLE HOTEL</h6>
                 <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8 minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar acogedor y confortable en tu visita a esta hermosa ciudad.</p>
-                </div>
-                <br>
-                <div class="d-flex align-items-center footer-top-space">
+              </div>
+              <br>
+              <div class="d-flex align-items-center footer-top-space">
                 <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
                 <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
                 <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
-                </div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel." target="_blank" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+              </div>
             </div>
             <div class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
-                <div class="block-23 mb-3">
+              <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">ENLACES ÚTILES</h6>
                 <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="index.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="habitaciones.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="sobrenosotros.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="habitaciones.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
                 </ul>
-                </div>
+              </div>
             </div>
             <div class="col-xsm-7 col-sm-7 col-md-7 col-lg-4 col-uxl-4 mb-md-0 p-3 pe-0 no-spaces footer-bottom-space">
-                <div class="block-23 mb-3">
+              <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
                 <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51964807723"><i class="fa-solid fa-phone"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51964807723?text=Quisiera%20información%20sobre%20el%20hotel"><i class="fa-brands fa-whatsapp"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51969000488"><i class="fa-solid fa-phone"></i><span class="text">+51 969 000 488</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel."><i class="fa-brands fa-whatsapp"></i><span class="text">+51 975 810 499</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:reservas@delvalle-hotel.com"><i class="fa-solid fa-envelope"></i><span class="text">reservas@delvalle-hotel.com</span></a></li>
                 </ul>
+              </div>
+              <form action="https://formsubmit.co/reservas@delvalle-hotel.com" method="POST" class="subscribe-form">
+                <div class="form-group d-flex">
+                <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
+                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
                 </div>
-                <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="subscribe-form">
-                  <div class="form-group d-flex">
-                  <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
-                  <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
-                  </div>
 
-                  <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/sobrenosotros.html">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_subject" value="Nuevo Suscriptor!">
-                </form>
+                <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/index.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo Suscriptor!">
+              </form>
             </div>
-            </div>
-            </div>
+          </div>
+          </div>
         <div class="footer-bottom" style="margin-top: -1px;">
-            <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
+          <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
             <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">Todos los derechos reservados - ©2022 Del Valle Hotel</p>
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
-            </div>
+          </div>
         </div>
-        </footer>
+      </footer>
     </div>
 
   </div>
@@ -270,7 +272,7 @@
 <script type="text/javascript">
   $(function () {
     $('#myDiv').floatingWhatsApp({
-      phone: '51964807723',
+      phone: '51975810499',
       popupMessage: 'Hola, ¿Cómo puedo ayudarte? 😊',
       showPopup: true,
       headerTitle: 'Del Valle Hotel Chat',

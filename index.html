@@ -38,10 +38,10 @@
                   Habitaciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a id="Accesibles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Accesibles</a></li>
-                  <li><a id="Familiares" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Familiares</a></li>
                   <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Matrimoniales</a></li>
-                  <li><a id="Suites" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Suites</a></li>     
+                  <li><a id="Dobles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Dobles</a></li>
+                  <li><a id="Triples" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Triples</a></li>
+                  <li><a id="Queen" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Queen</a></li>     
                 </ul>
               </li>
               <li class="nav-item mx-2">
@@ -194,7 +194,7 @@
       <!-- Habitaciones y Suites -->
       <div class="container-fluid texture pb-3">
         <div class="fade-in">
-          <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Habitaciones y Suites</strong></h3>
+          <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Nuestras Habitaciones</strong></h3>
           <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
         </div>
         <div class="container-fluid" style="width: 100%;">
@@ -243,9 +243,6 @@
                 </div>
               </div>
             </a>
-          </div>
-          <div class="container-fluid d-flex justify-content-center slide-in from-down">
-            <a class="btn btn-amarillo mt-4 pb-3 pt-3" href="habitaciones.html"><b style="font-size: 1.2em;">Todos los Cuartos</b></a>
           </div>
         </div>
         <br>
@@ -336,16 +333,18 @@
           <div class="footer-top">
             <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
               <div class="col-6 mt-2">
-                <img src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4em; width: auto;">
+                <img class="img-footer" src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4rem; width: auto;">
               </div>
               <div class="d-flex justify-content-end col-6">
                 <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
-                  <h6 class="me-2 mb-md-0" style="color: #fbfbfb;">MEDIOS DE PAGO</h6>
-                  <div class="d-flex flex-wrap align-items-center">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_visa32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_mastercard32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_americanexpress32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_dinersclub32x32.png">
+                  <h6 class="title-pagos mb-md-0" style="color: #fbfbfb; margin-right: 0.5rem;">MEDIOS DE PAGO</h6>
+                  <div class="d-flex flex-wrap justify-content-end align-items-center">
+                    <img alt="" class="img-pagos m-1" src="img/visa.png">
+                    <img alt="" class="img-pagos m-1" src="img/mastercard.png">
+                    <img alt="" class="img-pagos m-1" src="img/americanexpress.png">
+                    <img alt="" class="img-pagos m-1" src="img/dinersclub.png">
+                    <img alt="" class="img-pagos m-1" src="img/yape.png">
+                    <img alt="" class="img-pagos m-1" src="img/plin.png">
                   </div>
                 </div>
               </div>
@@ -362,7 +361,7 @@
                   <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
                   <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
                   <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
-                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel." target="_blank" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
                 </div>
               </div>
               <div class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
@@ -381,12 +380,12 @@
                   <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
                   <ul class="p-0" style="list-style: none; color: #fbfbfb;">
                     <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51964807723"><i class="fa-solid fa-phone"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51964807723?text=Quisiera%20información%20sobre%20el%20hotel"><i class="fa-brands fa-whatsapp"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51969000488"><i class="fa-solid fa-phone"></i><span class="text">+51 969 000 488</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel."><i class="fa-brands fa-whatsapp"></i><span class="text">+51 975 810 499</span></a></li>
+                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:reservas@delvalle-hotel.com"><i class="fa-solid fa-envelope"></i><span class="text">reservas@delvalle-hotel.com</span></a></li>
                   </ul>
                 </div>
-                <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="subscribe-form">
+                <form action="https://formsubmit.co/reservas@delvalle-hotel.com" method="POST" class="subscribe-form">
                   <div class="form-group d-flex">
                   <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
                   <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
@@ -419,7 +418,7 @@
 <script type="text/javascript">
   $(function () {
     $('#myDiv').floatingWhatsApp({
-      phone: '51964807723',
+      phone: '51975810499',
       popupMessage: 'Hola, ¿Cómo puedo ayudarte? 😊',
       showPopup: true,
       headerTitle: 'Del Valle Hotel Chat',

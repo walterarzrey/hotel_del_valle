@@ -38,10 +38,10 @@
                 Habitaciones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a id="Accesibles" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Accesibles</a></li>
-                <li><a id="Familiares" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Familiares</a></li>
                 <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Matrimoniales</a></li>
-                <li><a id="Suites" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Suites</a></li>     
+                <li><a id="Dobles" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Dobles</a></li>
+                <li><a id="Triples" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Triples</a></li>
+                <li><a id="Queen" class="dropdown-item letra-grande" href="#" onclick="LinkRoomsL(this.id); LinkRoomsS(this.id);">Queen</a></li>     
               </ul>
             </li>
             <li class="nav-item mx-2">
@@ -56,7 +56,29 @@
     <!-- Carousel habitaciones pantalla grande -->
     <div class="container-fluid texture pb-1 pantalla-l" style="width: 100%;">
       <div class="container-fluid d-flex flex-wrap" style="max-width: 1400px;">
-        <!-- Individual -->
+        <!-- Matrimonial -->
+        <div id="carruselRoomMatrimonial" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-block" data-bs-ride="carousel">
+          <div style="position: relative; margin-right: -2rem;">
+            <div class="carousel-indicators-rounded">
+              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="display: flex;">
+                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Individual
         <div id="carruselRoomIndividual" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-block" data-bs-ride="carousel">
           <div style="position: relative; margin-right: -2rem;">
             <div class="carousel-indicators-rounded">
@@ -76,7 +98,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+        
         <!-- Doble -->
         <div id="carruselRoomDoble" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-none" data-bs-ride="carousel">
           <div style="position: relative; margin-right: -2rem;">
@@ -98,13 +121,13 @@
             </div>
           </div>
         </div>
-        <!-- Familiar -->
-        <div id="carruselRoomFamiliar" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-none" data-bs-ride="carousel">
+        <!-- Triple -->
+        <div id="carruselRoomTriple" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-none" data-bs-ride="carousel">
           <div style="position: relative; margin-right: -2rem;">
             <div class="carousel-indicators-rounded">
-              <button type="button" data-bs-target="#carruselRoomFamiliar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carruselRoomFamiliar" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carruselRoomFamiliar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carruselRoomTriple" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carruselRoomTriple" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carruselRoomTriple" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" style="display: flex;">
@@ -115,27 +138,6 @@
               </div>
               <div class="carousel-item">
                 <div class="" style="height: 42rem; width: 100%; background-image: url('img/familiar3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Matrimonial -->
-        <div id="carruselRoomMatrimonial" class="carousel slide carousel-fade pb-4 pt-4 col-4 d-none" data-bs-ride="carousel">
-          <div style="position: relative; margin-right: -2rem;">
-            <div class="carousel-indicators-rounded">
-              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carruselRoomMatrimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" style="display: flex;">
-                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-              </div>
-              <div class="carousel-item">
-                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-              </div>
-              <div class="carousel-item">
-                <div class="" style="height: 42rem; width: 100%; background-image: url('img/matrimonial3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
               </div>
             </div>
           </div>
@@ -163,43 +165,55 @@
         </div>
 
         <div class="col-8">
-          <h3 class="display-6 text-center p-3 px-5" style="font-weight: 500; font-size: 3rem !important;"><strong>Las habitaciones de la casa</strong></h3>
+          <h3 class="display-6 text-center p-3 px-5" style="font-weight: 500; font-size: 3rem !important;"><strong>Nuestras Habitaciones</strong></h3>
           <hr class="mb-4" style="color: #000000; width: 25%; height: 0.2em; border-radius: 0.1em; margin: auto;">
           <div class="d-block mb-4 mt-4">
             <ul class="d-flex flex-wrap lista_tours p-3" style="list-style: none; text-align: center;">
+
+              <!-- Individual
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
                 <a class="link_tours active_link" id="Individual_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Accesible<br>Individual</a>
-              </li>
+              </li>  -->
+              
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
-                <a class="link_tours" id="Doble_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Accesible<br>Doble</a>
+                <a class="link_tours active_link" id="Matrimonial_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Matrimonial</a>
               </li>
+
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
-                <a class="link_tours" id="Familiar_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Familiar</a>
+                <a class="link_tours" id="Doble_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Doble</a>
               </li>
+
               <li class="punto d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
-                <a class="link_tours" id="Matrimonial_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Matrimonial</a>
+                <a class="link_tours" id="Triple_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Tradicional<br>Triple</a>
               </li>
+
               <li class="d-flex flex-wrap justify-content-center position-relative col-md-4 col-lg-2">
-                <a class="link_tours" id="Queen_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Superior<br>Queen</a>
+                <a class="link_tours" id="Queen_link" href="javascript:void(0);" onclick="LinkRoomsL(this.id);">Exclusivo<br>Queen</a>
               </li>
             </ul>
           </div>
           <hr class="" style="color: #000000; width: 81%; height: 0.2em; border-radius: 0.1em; margin: auto; margin-top: -1rem;">
           <div class="container-fluid pt-4 pb-4 col-10">
-            <!-- Individual Descripcion -->
-            <p id="Individual_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación de 12 m² con una cama muy cómoda, cuenta con un velador y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p>
-            <!-- Doble Descripcion -->
-            <p id="Doble_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación de 15.5 m² con dos camas cómodas, cuenta con un velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente acogedor en solitario o en pareja.</p>
-            <!-- Familiar Descripcion -->
-            <p id="Familiar_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 25 m², incluyen 1 cama de dos plazas y 2 camas de una plaza (o 1 litera), cuentan con escritorio, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable en familia.</p>
+
+            <!-- Individual Descripcion
+            <p id="Individual_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación de 12 m² con una cama muy cómoda, cuenta con un velador y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p>  -->
+            
             <!-- Matrimonial Descripcion -->
-            <p id="Matrimonial_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 13,5 m² con una cama cómoda de dos plazas o dos plazas y media, cuenta con escritorio, velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Es ideal para parejas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable.</p>
+            <p id="Matrimonial_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación con una cama muy cómoda, cuenta con veladores y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p>
+
+            <!-- Doble Descripcion -->
+            <p id="Doble_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con dos camas cómodas (01 cama de 2 plazas y 01 de 1 plaza y media) cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para familias que buscan un ambiente acogedor.</p>
+
+            <!-- Triple Descripcion -->
+            <p id="Triple_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con tres cómodas camas (01 cama de 2 plazas y 02 de 1 plaza y media) cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para familias que buscan un ambiente amplio y acogedor.</p>
+            
             <!-- Queen Descripcion -->
-            <p id="Queen_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 22 m² con dos camas queen-size con vista panorámica. Cuenta con escritorio, velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Es ideal para parejas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable.</p>
+            <p id="Queen_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con 01 confortable cama de tamaño Queen, cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, Netflix, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para parejas que buscan un ambiente amplio y acogedor.</p>
           </div>
           <hr class="" style="color: #d8d8d8; width: 81%; height: 1.2em; border-radius: 0.1em; margin: auto; margin-top: -1rem; opacity: 1 !important;">
           <div class="container-fluid mt-4 py-4 px-5 shadow-sm mb-4 rounded" style="flex: 0 0 auto; width: 81%; background-color: #fff;">
-            <!-- Individual Icono -->
+
+            <!-- Individual Icono
             <div id="Individual_icono" class="row d-flex">
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
@@ -238,6 +252,106 @@
                   <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-volume-xmark" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Insonorizado</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Matrimonial Icono -->
+            <div id="Matrimonial_icono" class="row d-flex">
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Baño privado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-tv" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">TV por cable</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-wifi" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">WiFi gratis</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-shower" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Ducha grande</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-soap" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Indumentarias de baño</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-person-booth" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Armario/Ropero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-rug" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Suelo alfombrado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
                   </div>
                 </div>
               </div>
@@ -326,6 +440,14 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
@@ -341,8 +463,8 @@
                 </div>
               </div>
             </div>
-            <!-- Familiar Icono -->
-            <div id="Familiar_icono" class="row d-flex d-none">
+            <!-- Triple Icono -->
+            <div id="Triple_icono" class="row d-flex d-none">
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
@@ -417,100 +539,9 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-volume-xmark" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Insonorizado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Matrimonial Icono -->
-            <div id="Matrimonial_icono" class="row d-flex d-none">
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Baño privado</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-tv" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">TV por cable</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-wifi" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">WiFi gratis</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-shower" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Ducha grande</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-soap" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Indumentarias de baño</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-person-booth" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Armario/Ropero</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-rug" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Suelo alfombrado</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-fire-burner" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Calefacción</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
                   </div>
                 </div>
               </div>
@@ -551,17 +582,17 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="footer-sample-full" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify iconify--mdi" width="28.5" height="24"><path fill="#D69C4F" d="M6.5 2h4l2.94 8.83L13.5 2h4v20c-1.25-.22-2.63-.36-4.09-.42L10.5 13l-.07 8.59c-1.4.06-2.73.2-3.93.41V2Z"></path></svg>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Netflix</span>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-phone" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Teléfono interno</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
                   </div>
                 </div>
               </div>
@@ -615,6 +646,14 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-fire-burner" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Calefacción</span>
@@ -647,47 +686,56 @@
     <div class="container-fluid texture pb-1 pantalla-s" style="width: 100%;">
       <div class="container-fluid d-flex flex-wrap justify-content-center" style="max-width: 1400px;">
         <div class="col-12">
-          <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Las habitaciones de la casa</strong></h3>
+          <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Nuestras Habitaciones</strong></h3>
           <hr class="mb-4" style="color: #000000; width: 25%; height: 0.2em; border-radius: 0.1em; margin: auto;">
           <div class="dropdown dropdown-flex mb-4 mt-4" style="text-align: center;">
             <button id="btnRooms" class="link_tours link_tours_button active_link button_rooms" style="text-transform: uppercase;" onclick="openLinks();">
-              Accesible Individual
+              Tradicional Matrimonial
             </button>
             <div class="fa-solid fa-angle-down flecha_rooms"></div>
             <ul class="dropdown-menu dropdown-rooms" aria-labelledby="dropdownRooms" style="list-style: none;">
+              
+              <!-- Individual
               <li class="dropdown-item" style="text-align: center;">
                 <a class="link_tours active_link" id="IndividualS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Accesible Individual</a>
+              </li> -->
+              
+              <li class="dropdown-item" style="text-align: center;">
+                <a class="link_tours active_link" id="MatrimonialS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Tradicional Matrimonial</a>
               </li>
               <li class="dropdown-item" style="text-align: center;">
-                <a class="link_tours" id="DobleS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Accesible Doble</a>
+                <a class="link_tours" id="DobleS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Tradicional Doble</a>
               </li>
               <li class="dropdown-item" style="text-align: center;">
-                <a class="link_tours" id="FamiliarS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Tradicional familiar</a>
+                <a class="link_tours" id="TripleS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Tradicional Triple</a>
               </li>
               <li class="dropdown-item" style="text-align: center;">
-                <a class="link_tours" id="MatrimonialS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Tradicional Matrimonial</a>
-              </li>
-              <li class="dropdown-item" style="text-align: center;">
-                <a class="link_tours" id="QueenS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Superior Queen</a>
+                <a class="link_tours" id="QueenS_link" href="javascript:void(0);" onclick="LinkRoomsS(this.id);">Exclusivo Queen</a>
               </li>
             </ul>
           </div>
           <hr class="mt-4" style="color: #000000; height: 0.2em; border-radius: 0.1em; margin: auto; margin-top: -1rem;">
           <div class="container-fluid pt-4 pb-4 col-12">
-            <!-- Individual Descripcion -->
-            <p id="IndividualS_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación de 12 m² con una cama muy cómoda, cuenta con un velador y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p>
-            <!-- Doble Descripcion -->
-            <p id="DobleS_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación de 15.5 m² con dos camas cómodas, cuenta con un velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente acogedor en solitario o en pareja.</p>
-            <!-- Familiar Descripcion -->
-            <p id="FamiliarS_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 25 m², incluyen 1 cama de dos plazas y 2 camas de una plaza (o 1 litera), cuentan con escritorio, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable en familia.</p>
+
+            <!-- Individual Descripcion 
+            <p id="IndividualS_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación de 12 m² con una cama muy cómoda, cuenta con un velador y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p> -->
+            
             <!-- Matrimonial Descripcion -->
-            <p id="MatrimonialS_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 13,5 m² con una cama cómoda de dos plazas o dos plazas y media, cuenta con escritorio, velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Es ideal para parejas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable.</p>
+            <p id="MatrimonialS_descripcion" class="d-block" style="text-align: justify;">Disfruta de una acogedora habitación con una cama muy cómoda, cuenta con veladores y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para personas que buscan un ambiente funcional y pacífico.</p>
+
+            <!-- Doble Descripcion -->
+            <p id="DobleS_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con dos camas cómodas (01 cama de 2 plazas y 01 de 1 plaza y media) cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para familias que buscan un ambiente acogedor.</p>
+
+            <!-- Triple Descripcion -->
+            <p id="TripleS_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con tres cómodas camas (01 cama de 2 plazas y 02 de 1 plaza y media) cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para familias que buscan un ambiente amplio y acogedor.</p>
+            
             <!-- Queen Descripcion -->
-            <p id="QueenS_descripcion" class="d-none" style="text-align: justify;">Disfruta en una acogedora habitación de 22 m² con dos camas queen-size con vista panorámica. Cuenta con escritorio, velador, armario y lámparas nocturnas. Podrás disfrutar de lo servicios de TV con cable, baño privado y WiFi gratis. Además de contar con desayuno incluido. Es ideal para parejas que buscan un ambiente acogedor y tranquilo para vivir una experiencia inolvidable.</p>
+            <p id="QueenS_descripcion" class="d-none" style="text-align: justify;">Disfruta de una acogedora habitación con 01 confortable cama de tamaño Queen, cuenta con veladores, y modernas lámparas nocturnas. Podrás disfrutar de los servicios de baño privado, TV con cable, Netflix, intercomunicador y WiFi gratis. Además de contar con desayuno incluido. Ideal para parejas que buscan un ambiente amplio y acogedor.</p>
           </div>
           <hr class="" style="color: #d8d8d8; height: 1.2em; border-radius: 0.1em; margin: auto; margin-top: -1rem; opacity: 1 !important;">
           <div class="container-fluid mt-4 py-4 px-5 shadow-sm mb-4 rounded" style="flex: 0 0 auto; background-color: #fff;">
-            <!-- Individual Icono -->
+
+            <!-- Individual Icono
             <div id="IndividualS_icono" class="row d-flex">
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
@@ -726,6 +774,106 @@
                   <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-volume-xmark" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Insonorizado</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            
+            <!-- Matrimonial Icono -->
+            <div id="MatrimonialS_icono" class="row d-flex">
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Baño privado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-tv" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">TV por cable</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-wifi" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">WiFi gratis</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-shower" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Ducha grande</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-soap" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Indumentarias de baño</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-person-booth" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Armario/Ropero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-rug" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Suelo alfombrado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
                   </div>
                 </div>
               </div>
@@ -814,6 +962,14 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
@@ -829,8 +985,8 @@
                 </div>
               </div>
             </div>
-            <!-- Familiar Icono -->
-            <div id="FamiliarS_icono" class="row d-flex d-none">
+            <!-- Triple Icono -->
+            <div id="TripleS_icono" class="row d-flex d-none">
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
@@ -905,100 +1061,9 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-mug-saucer" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Desayuno</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-volume-xmark" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Insonorizado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Matrimonial Icono -->
-            <div id="MatrimonialS_icono" class="row d-flex d-none">
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bath" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Baño privado</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-tv" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">TV por cable</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-wifi" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">WiFi gratis</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-shower" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Ducha grande</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-soap" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Indumentarias de baño</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-person-booth" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Armario/Ropero</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-couch" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Velador/Muebles</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-rug" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Suelo alfombrado</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-fire-burner" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
-                  <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Calefacción</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
                   </div>
                 </div>
               </div>
@@ -1039,17 +1104,17 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="footer-sample-full" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify iconify--mdi" width="28.5" height="24"><path fill="#D69C4F" d="M6.5 2h4l2.94 8.83L13.5 2h4v20c-1.25-.22-2.63-.36-4.09-.42L10.5 13l-.07 8.59c-1.4.06-2.73.2-3.93.41V2Z"></path></svg>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Netflix</span>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
-                  <i class="fa-solid fa-phone" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <i class="fa-solid fa-bell-concierge" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
-                    <span style="font-weight: 200; font-size: 1rem;">Teléfono interno</span>
+                    <span style="font-weight: 200; font-size: 1rem;">Servicio a la habitación</span>
                   </div>
                 </div>
               </div>
@@ -1103,6 +1168,14 @@
               </div>
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="mb-4 align-items-center justify-content-start d-flex">
+                  <i class="fa-solid fa-phone-flip" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
+                  <div>
+                    <span style="font-weight: 200; font-size: 1rem;">Intercomunicador</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="mb-4 align-items-center justify-content-start d-flex">
                   <i class="fa-solid fa-fire-burner" style="color: #d69c4f; font-size: 22px; margin-right: 5px;"></i>
                   <div>
                     <span style="font-weight: 200; font-size: 1rem;">Calefacción</span>
@@ -1129,7 +1202,7 @@
           </div>
         </div>
 
-        <!-- Individual -->
+        <!-- Individual
         <div id="carruselRoomIndividualS" class="carousel slide carousel-fade pb-4 col-12 d-block" data-bs-ride="carousel">
           <div class="carousel-indicators-rounded p-4">
             <button type="button" data-bs-target="#carruselRoomIndividualS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1147,7 +1220,28 @@
               <div class="" style="height: 36rem; width: 100%; background-image: url('img/accesible3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
             </div>
           </div>
+        </div> -->
+        
+        <!-- Matrimonial -->
+        <div id="carruselRoomMatrimonialS" class="carousel slide carousel-fade pb-4 col-12 d-block" data-bs-ride="carousel">
+          <div class="carousel-indicators-rounded p-4">
+            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="display: flex;">
+              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+          </div>
         </div>
+
         <!-- Doble -->
         <div id="carruselRoomDobleS" class="carousel slide carousel-fade pb-4 col-12 d-none" data-bs-ride="carousel">
           <div class="carousel-indicators-rounded p-4">
@@ -1167,12 +1261,13 @@
             </div>
           </div>
         </div>
-        <!-- Familiar -->
-        <div id="carruselRoomFamiliarS" class="carousel slide carousel-fade pb-4 col-12 d-none" data-bs-ride="carousel">
+
+        <!-- Triple -->
+        <div id="carruselRoomTripleS" class="carousel slide carousel-fade pb-4 col-12 d-none" data-bs-ride="carousel">
           <div class="carousel-indicators-rounded p-4">
-            <button type="button" data-bs-target="#carruselRoomFamiliarS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carruselRoomFamiliarS" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carruselRoomFamiliarS" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carruselRoomTripleS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselRoomTripleS" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselRoomTripleS" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" style="display: flex;">
@@ -1186,25 +1281,7 @@
             </div>
           </div>
         </div>
-        <!-- Matrimonial -->
-        <div id="carruselRoomMatrimonialS" class="carousel slide carousel-fade pb-4 col-12 d-none" data-bs-ride="carousel">
-          <div class="carousel-indicators-rounded p-4">
-            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carruselRoomMatrimonialS" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="display: flex;">
-              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-            </div>
-            <div class="carousel-item">
-              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-            </div>
-            <div class="carousel-item">
-              <div class="" style="height: 36rem; width: 100%; background-image: url('img/matrimonial3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-            </div>
-          </div>
-        </div>
+
         <!-- Queen -->
         <div id="carruselRoomQueenS" class="carousel slide carousel-fade pb-4 col-12 d-none" data-bs-ride="carousel">
           <div class="carousel-indicators-rounded p-4">
@@ -1234,7 +1311,7 @@
       <div class="container-fluid p-0" style="max-width: 1200px;">
         <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Consulta por una Habitación</strong></h3>
         <hr class="mb-4" style="color: #000000; width: 18%; height: 0.2em; border-radius: 0.1em; margin: auto;">
-        <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="row g-3 needs-validation" style="margin: 0 !important;" novalidate>
+        <form action="https://formsubmit.co/reservas@delvalle-hotel.com" method="POST" class="row g-3 needs-validation" style="margin: 0 !important;" novalidate>
           <div class="form-floating col-sm-12 col-md-6 px-4">
             <input type="text" name="Nombres" class="form-control reserva" id="ValidationNombre" placeholder="Nombres y Apellidos" required>
             <label class="px-4" for="ValidationNombre" >Nombres y Apellidos</label>
@@ -1327,7 +1404,7 @@
           <div class="modal-header d-block">
             <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body" style="text-align: justify;">
-              Los datos personales proporcionados serán incluidos en la base de datos de titularidad de DEL VALLE HOTEL S.A. (“DEL VALLE HOTEL”) ubicado en Av. Av. Francisca de la Calle N° 221, El Tambo, Huancayo por tiempo indeterminado. DEL VALLE HOTEL podrá tratar y transferir los datos personales proporcionados a fin de (i) enviar noticias, publicidad sobre productos, servicios, promociones comerciales, actividades comerciales y/o actividades de marketing vinculadas con DEL VALLE HOTEL y/o (ii) realizar encuestas sobre los productos o servicios que ofrece DEL VALLE HOTEL, así como analizar las encuestas y comentarios de los clientes. A efectos de realizar el tratamiento de datos personales descrito, DEL VALLE HOTEL contratará los servicios de las siguientes empresas, las cuales tendrán acceso a sus datos para gestionarlos y procesarlos en su condición de terceros encargados: (i) PIXELAND S.A.C., empresa encargada de brindar el servicio de gestión de instalaciones informáticas; (ii) GoDaddy Operating Company, LLC, empresa encargada de brindar el servicio de alojamiento en nube. Ubicación: Seattle; Washington, Estados Unidos (iii) Newhotel, sofware encargada de brindar el servicio de almacenamiento y envío de datos personales a las empresas MyHotel (San Francisco, California, Estados Unidos) y Revinate (Vitacura, Los Laureles 1035, Santiago, Chile) a efectos de realizar encuestas en relación a la calidad del servicio brindado por DEL VALLE HOTEL.; (iv) Gobal Obi SI, empresa encargada de brindar el servicio de motor de reservas. Ubicación: Calle Porto Pi, 8 Edificio Reina Constanza, Bajos 07015 Palma de Mallorca Baleares, España); y, (v) Pagos Online Perú S.A.C., empresa encargada de proveer el servicio de pagos en línea. Ubicación: Cl. 99 #14 49, Bogotá, Colombia. Como usted podrá advertir, algunos de los servicios antes indicados son prestados por proveedores de servicios ubicados fuera del país, siendo que dicho tratamiento de datos personales se efectúa conforme a la normativa sobre protección de datos personales. DEL VALLE HOTEL no revelará sus datos personales a ningún otro tercero con excepción a los antes indicados. Los datos suministrados por usted son esenciales para las finalidades antes indicadas. Usted podrá revocar su consentimiento o ejercer los derechos de acceso, rectificación, oposición o cancelación remitiendo una comunicación a la siguiente dirección: proteccióndedatos@delvallehotel.com o ingresando al siguiente enlace web https://www.delvallehotel.com/ Si usted no está de acuerdo con los términos de nuestra Política de Protección de Datos no nos proporcione información personal y abandone este sitio Web. Para cualquier aclaración o duda, puede ponerse en contacto con nosotros mediante correo electrónico en la dirección marketing@delvallehotel.com
+              Los datos personales proporcionados serán incluidos en la base de datos de titularidad de DEL VALLE HOTEL S.A. (“DEL VALLE HOTEL”) ubicado en Av. Av. Francisca de la Calle N° 221, El Tambo, Huancayo por tiempo indeterminado. DEL VALLE HOTEL podrá tratar y transferir los datos personales proporcionados a fin de (i) enviar noticias, publicidad sobre productos, servicios, promociones comerciales, actividades comerciales y/o actividades de marketing vinculadas con DEL VALLE HOTEL y/o (ii) realizar encuestas sobre los productos o servicios que ofrece DEL VALLE HOTEL, así como analizar las encuestas y comentarios de los clientes. A efectos de realizar el tratamiento de datos personales descrito, DEL VALLE HOTEL contratará los servicios de las siguientes empresas, las cuales tendrán acceso a sus datos para gestionarlos y procesarlos en su condición de terceros encargados: (i) PIXELAND S.A.C., empresa encargada de brindar el servicio de gestión de instalaciones informáticas; (ii) GoDaddy Operating Company, LLC, empresa encargada de brindar el servicio de alojamiento en nube. Ubicación: Seattle; Washington, Estados Unidos (iii) Newhotel, sofware encargada de brindar el servicio de almacenamiento y envío de datos personales a las empresas MyHotel (San Francisco, California, Estados Unidos) y Revinate (Vitacura, Los Laureles 1035, Santiago, Chile) a efectos de realizar encuestas en relación a la calidad del servicio brindado por DEL VALLE HOTEL.; (iv) Gobal Obi SI, empresa encargada de brindar el servicio de motor de reservas. Ubicación: Calle Porto Pi, 8 Edificio Reina Constanza, Bajos 07015 Palma de Mallorca Baleares, España); y, (v) Pagos Online Perú S.A.C., empresa encargada de proveer el servicio de pagos en línea. Ubicación: Cl. 99 #14 49, Bogotá, Colombia. Como usted podrá advertir, algunos de los servicios antes indicados son prestados por proveedores de servicios ubicados fuera del país, siendo que dicho tratamiento de datos personales se efectúa conforme a la normativa sobre protección de datos personales. DEL VALLE HOTEL no revelará sus datos personales a ningún otro tercero con excepción a los antes indicados. Los datos suministrados por usted son esenciales para las finalidades antes indicadas. Usted podrá revocar su consentimiento o ejercer los derechos de acceso, rectificación, oposición o cancelación remitiendo una comunicación a la siguiente dirección: reservas@delvalle-hotel.com o ingresando al siguiente enlace web https://www.delvalle-hotel.com/ Si usted no está de acuerdo con los términos de nuestra Política de Protección de Datos no nos proporcione información personal y abandone este sitio Web. Para cualquier aclaración o duda, puede ponerse en contacto con nosotros mediante correo electrónico en la dirección reservas@delvalle-hotel.com.
             </div>
           </div>
         </div>
@@ -1336,82 +1413,83 @@
 
     <!-- Footer -->
     <div class="container-completo">
-        <footer class="d-block">
-          <div class="footer-top">
-            <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
-              <div class="col-6 mt-2">
-                <img src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4em; width: auto;">
-              </div>
-              <div class="d-flex justify-content-end col-6">
-                <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
-                  <h6 class="me-2 mb-md-0" style="color: #fbfbfb;">MEDIOS DE PAGO</h6>
-                  <div class="d-flex flex-wrap align-items-center">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_visa32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_mastercard32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_americanexpress32x32.png">
-                    <img alt="" class="m-1" src="https://s3.us-east-1.amazonaws.com/multimediaqa.casa-andina.com/icons/32X32_dinersclub32x32.png">
-                  </div>
-                </div>
-              </div>
-              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+      <footer class="d-block">
+        <div class="footer-top">
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+            <div class="col-6 mt-2">
+              <img class="img-footer" src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4rem; width: auto;">
             </div>
-            <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
-              <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-5 col-uxl-6 mb-md-0 p-3 ps-0 no-spaces">
-                <div class="block-23 mb-3">
-                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">DEL VALLE HOTEL</h6>
-                  <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8 minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar acogedor y confortable en tu visita a esta hermosa ciudad.</p>
-                </div>
-                <br>
-                <div class="d-flex align-items-center footer-top-space">
-                  <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
-                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
-                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
-                  <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+            <div class="d-flex justify-content-end col-6">
+              <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
+                <h6 class="title-pagos mb-md-0" style="color: #fbfbfb; margin-right: 0.5rem;">MEDIOS DE PAGO</h6>
+                <div class="d-flex flex-wrap justify-content-end align-items-center">
+                  <img alt="" class="img-pagos m-1" src="img/visa.png">
+                  <img alt="" class="img-pagos m-1" src="img/mastercard.png">
+                  <img alt="" class="img-pagos m-1" src="img/americanexpress.png">
+                  <img alt="" class="img-pagos m-1" src="img/dinersclub.png">
+                  <img alt="" class="img-pagos m-1" src="img/yape.png">
+                  <img alt="" class="img-pagos m-1" src="img/plin.png">
                 </div>
               </div>
-              <div class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
-                <div class="block-23 mb-3">
-                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">ENLACES ÚTILES</h6>
-                  <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="index.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="sobrenosotros.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
-                    <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
-                  </ul>
-                </div>
+            </div>
+            <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+          </div>
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+            <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-5 col-uxl-6 mb-md-0 p-3 ps-0 no-spaces">
+              <div class="block-23 mb-3">
+                <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">DEL VALLE HOTEL</h6>
+                <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8 minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar acogedor y confortable en tu visita a esta hermosa ciudad.</p>
               </div>
-              <div class="col-xsm-7 col-sm-7 col-md-7 col-lg-4 col-uxl-4 mb-md-0 p-3 pe-0 no-spaces footer-bottom-space">
-                <div class="block-23 mb-3">
-                  <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
-                  <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51964807723"><i class="fa-solid fa-phone"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51964807723?text=Quisiera%20información%20sobre%20el%20hotel"><i class="fa-brands fa-whatsapp"></i><span class="text">+51 964 807 723</span></a></li>
-                    <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:walterarzapalo23@gmail.com"><i class="fa-solid fa-envelope"></i><span class="text">info@delvallehotel.com</span></a></li>
-                  </ul>
+              <br>
+              <div class="d-flex align-items-center footer-top-space">
+                <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel." target="_blank" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+              </div>
+            </div>
+            <div class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
+              <div class="block-23 mb-3">
+                <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">ENLACES ÚTILES</h6>
+                <ul class="p-0" style="list-style: none; color: #fbfbfb;">
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="sobrenosotros.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="habitaciones.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xsm-7 col-sm-7 col-md-7 col-lg-4 col-uxl-4 mb-md-0 p-3 pe-0 no-spaces footer-bottom-space">
+              <div class="block-23 mb-3">
+                <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
+                <ul class="p-0" style="list-style: none; color: #fbfbfb;">
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51969000488"><i class="fa-solid fa-phone"></i><span class="text">+51 969 000 488</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel."><i class="fa-brands fa-whatsapp"></i><span class="text">+51 975 810 499</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:reservas@delvalle-hotel.com"><i class="fa-solid fa-envelope"></i><span class="text">reservas@delvalle-hotel.com</span></a></li>
+                </ul>
+              </div>
+              <form action="https://formsubmit.co/reservas@delvalle-hotel.com" method="POST" class="subscribe-form">
+                <div class="form-group d-flex">
+                <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
+                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
                 </div>
-                <form action="https://formsubmit.co/walterarzapalo23@gmail.com" method="POST" class="subscribe-form">
-                  <div class="form-group d-flex">
-                  <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
-                  <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
-                  </div>
 
-                  <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/habitaciones.html">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_subject" value="Nuevo Suscriptor!">
-                </form>
-              </div>
-            </div>
-            </div>
-        
-          <div class="footer-bottom" style="margin-top: -1px;">
-            <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
-              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
-              <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">Todos los derechos reservados - ©2022 Del Valle Hotel</p>
-              <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+                <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/index.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo Suscriptor!">
+              </form>
             </div>
           </div>
-        </footer>
+          </div>
+        <div class="footer-bottom" style="margin-top: -1px;">
+          <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
+            <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+            <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">Todos los derechos reservados - ©2022 Del Valle Hotel</p>
+            <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
+          </div>
+        </div>
+      </footer>
     </div>
 
   </div>
@@ -1425,7 +1503,7 @@
 <script type="text/javascript">
   $(function () {
     $('#myDiv').floatingWhatsApp({
-      phone: '51964807723',
+      phone: '51975810499',
       popupMessage: 'Hola, ¿Cómo puedo ayudarte? 😊',
       showPopup: true,
       headerTitle: 'Del Valle Hotel Chat',
