@@ -809,14 +809,24 @@ function ValidarForm() {
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-          form.classList.add('was-validated')
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+                document.getElementById("invalid-captcha").style.display = "block";
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            else{
+                document.getElementById("invalid-captcha").style.display = "none";
+            }
+
+            form.classList.add('was-validated')
         }, false)
-      })      
+      })    
   }
 
   function onlyNumbers(evt){

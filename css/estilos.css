@@ -866,7 +866,7 @@ body{
 }
 
 .g-recaptcha>div {
-  margin: 0 auto 30px;
+  margin: 0 auto;
 }
 
 @media (max-width: 999px) {
