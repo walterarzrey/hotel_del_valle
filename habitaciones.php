@@ -2,6 +2,23 @@
  
 // grab recaptcha library
 require_once "recaptchalib.php";
+
+// your secret key
+$secret = "6Lcui54gAAAAAJIrlA11bcaLSf-IsOLEOmcsuaZa";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
+
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+  $response = $reCaptcha->verifyResponse(
+      $_SERVER["REMOTE_ADDR"],
+      $_POST["g-recaptcha-response"]
+  );
+}
  
 ?>
 <!DOCTYPE html>
@@ -1387,7 +1404,7 @@ require_once "recaptchalib.php";
           </div>
           <div class="col-sm-12 col-md-6" style="margin-top: 2rem;">
             <div class="form-group">
-              <div class="g-recaptcha" data-sitekey="6LdSkp4gAAAAAKx8tkPTKYYbqQOD65kPcwYqR4a0" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+              <div class="g-recaptcha" data-sitekey="6Lcui54gAAAAAOxwfPqYES2kp8wHDdrjQaNwJ9ir" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
               <input class="form-control d-none" data-recaptcha="true" data-error="Por favor complete el Captcha">
               <div class="help-block with-errors"></div>
             </div>
@@ -1395,6 +1412,12 @@ require_once "recaptchalib.php";
           <div class="col-sm-12 col-md-6 m-0 px-4 mt-3">
             <button class="btn btn-amarillo" type="submit" style="width: 100%;" onclick="ValidarForm()">ENVIAR</button>
           </div>
+          
+          <?php 
+            foreach ($_POST as $key => $value) {
+              echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
+            }
+          ?>
 
           <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/habitaciones.html">
           <input type="hidden" name="_captcha" value="false">
@@ -1519,8 +1542,3 @@ require_once "recaptchalib.php";
   });
 </script>
 </html>
-<?php 
-  foreach ($_POST as $key => $value) {
-    echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
-  }
-?>
