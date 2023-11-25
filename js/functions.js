@@ -811,26 +811,6 @@ function ValidarForm() {
                     event.stopPropagation()
                 }
 
-                var response = grecaptcha.getResponse();
-                if (response.length == 0) {
-                    document.getElementById("invalid-captcha").style.display = "block";
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                else {
-                    document.getElementById("invalid-captcha").style.display = "none";
-                }
-
-                // Configurar los datos del correo electrónico
-                var emailData = {
-                    to: 'destinatario@example.com',
-                    subject: 'Asunto del correo',
-                    body: 'Contenido del correo'
-                };
-
-                // Llamar a la función para enviar el correo
-                sendEmail(emailData);
-
                 form.classList.add('was-validated')
             }, false)
         })
@@ -868,19 +848,6 @@ function validateDate() {
     } else {
         fecha.type = 'date';
     }
-}
-
-// Función para enviar el correo electrónico usando SMTPJS
-function sendEmail(data) {
-    Email.send({
-        SecureToken: 'tu_token_seguro',
-        To: data.to,
-        From: 'remite@example.com',
-        Subject: data.subject,
-        Body: data.body
-    }).then(
-        message => console.log(message)
-    );
 }
 
 let imageContainers = document.querySelectorAll('.container-overlay');
