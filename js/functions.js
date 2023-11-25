@@ -46,7 +46,7 @@ function LinkTours(clicked_id) {
         textocdl.classList.add("d-none");
         textopmb.classList.add("d-none");
 
-    }else if (clicked_id == "plazadearmas_link") {
+    } else if (clicked_id == "plazadearmas_link") {
         var imgpiw = document.getElementById("parqueidentidad_img")
         var imgccc = document.getElementById("plazadearmas_img")
         var imgcdl = document.getElementById("cerritodelalibertad_img")
@@ -71,7 +71,7 @@ function LinkTours(clicked_id) {
         $(textopiw).fadeOut("slow");
         $(textopmb).fadeOut("slow");
         $(textoccc).fadeIn("slow");
-        
+
         link1.classList.remove("active_link")
         link2.classList.add("active_link")
         link3.classList.remove("active_link")
@@ -89,7 +89,7 @@ function LinkTours(clicked_id) {
         textocdl.classList.add("d-none");
         textopmb.classList.add("d-none");
 
-    }else if (clicked_id == "cerritodelalibertad_link") {
+    } else if (clicked_id == "cerritodelalibertad_link") {
         var imgpiw = document.getElementById("parqueidentidad_img")
         var imgccc = document.getElementById("plazadearmas_img")
         var imgcdl = document.getElementById("cerritodelalibertad_img")
@@ -132,7 +132,7 @@ function LinkTours(clicked_id) {
         textoccc.classList.add("d-none");
         textopmb.classList.add("d-none");
 
-    }else if (clicked_id == "parquemates_link") {
+    } else if (clicked_id == "parquemates_link") {
         var imgpiw = document.getElementById("parqueidentidad_img")
         var imgccc = document.getElementById("plazadearmas_img")
         var imgcdl = document.getElementById("cerritodelalibertad_img")
@@ -175,17 +175,17 @@ function LinkTours(clicked_id) {
         textoccc.classList.add("d-none");
         textopmb.classList.remove("d-none");
 
-    }else{
+    } else {
         return false;
     }
-    
+
 }
 
-window .onscroll = function () {
+window.onscroll = function () {
     scrollFunction();
 }
 
-function Carga(){
+function Carga() {
     var primero = document.getElementById("primer-fade");
     primero.classList.add("appear");
 }
@@ -194,24 +194,24 @@ function scrollFunction() {
     var image = document.getElementById("myLogo");
     var despl = document.getElementById("navdesplegable");
     var nav = document.getElementById("navorigin");
-            if (document.documentElement.scrollTop > 0)
-                image.src = "img/logo_largo_v2.png", despl.style.display = "flex",
-                nav.style.boxShadow = "0 3px 20px rgba(0, 0, 0, 0.4)";   
-            else
-                image.src = "img/logo_general.png", despl.style.display = "block",
-                nav.style.boxShadow = "none";
+    if (document.documentElement.scrollTop > 0)
+        image.src = "img/logo_largo_v2.png", despl.style.display = "flex",
+            nav.style.boxShadow = "0 3px 20px rgba(0, 0, 0, 0.4)";
+    else
+        image.src = "img/logo_general.png", despl.style.display = "block",
+            nav.style.boxShadow = "none";
 }
 
-function Load(clicked_id){
+function Load(clicked_id) {
     var loadroom = document.getElementById(clicked_id).innerHTML;
     localStorage.setItem("storageRoom", loadroom);
 }
 
-function LoadRoom(){
+function LoadRoom() {
     var $window = $(window);
     if ($window.width() < 1000) {
         LinkRoomsS();
-    }else{
+    } else {
         LinkRoomsL();
     }
 }
@@ -224,23 +224,23 @@ function LinkRoomsL(clicked_id) {
     const link2 = document.getElementById("Doble_link");
     const link3 = document.getElementById("Triple_link");
     const link4 = document.getElementById("Matrimonial_link");
-    const link5 = document.getElementById("Queen_link");
+    const link5 = document.getElementById("Premium_link");
     /*if (clicked_id == "Individual_link" || clicked_id == "Accesibles" || loadedroom == "Accesibles") {
         var imgind = document.getElementById("carruselRoomIndividual")
         var imgdob = document.getElementById("carruselRoomDoble")
         var imgfam = document.getElementById("carruselRoomFamiliar")
         var imgmat = document.getElementById("carruselRoomMatrimonial")
-        var imgque = document.getElementById("carruselRoomQueen")
+        var imgque = document.getElementById("carruselRoomPremium")
         var descind = document.getElementById("Individual_descripcion")
         var descdob = document.getElementById("Doble_descripcion")
         var descfam = document.getElementById("Familiar_descripcion")
         var descmat = document.getElementById("Matrimonial_descripcion")
-        var descque = document.getElementById("Queen_descripcion")
+        var descque = document.getElementById("Premium_descripcion")
         var iconind = document.getElementById("Individual_icono")
         var icondob = document.getElementById("Doble_icono")
         var iconfam = document.getElementById("Familiar_icono")
         var iconmat = document.getElementById("Matrimonial_icono")
-        var iconque = document.getElementById("Queen_icono")
+        var iconque = document.getElementById("Premium_icono")
         $(imgind).fadeIn("slow");
         $(imgdob).fadeOut("slow");
         $(imgfam).fadeOut("slow");
@@ -284,17 +284,17 @@ function LinkRoomsL(clicked_id) {
         var imgdob = document.getElementById("carruselRoomDoble")
         var imgtri = document.getElementById("carruselRoomTriple")
         var imgmat = document.getElementById("carruselRoomMatrimonial")
-        var imgque = document.getElementById("carruselRoomQueen")
+        var imgque = document.getElementById("carruselRoomPremium")
         //var descind = document.getElementById("Individual_descripcion")
         var descdob = document.getElementById("Doble_descripcion")
         var desctri = document.getElementById("Triple_descripcion")
         var descmat = document.getElementById("Matrimonial_descripcion")
-        var descque = document.getElementById("Queen_descripcion")
+        var descque = document.getElementById("Premium_descripcion")
         //var iconind = document.getElementById("Individual_icono")
         var icondob = document.getElementById("Doble_icono")
         var icontri = document.getElementById("Triple_icono")
         var iconmat = document.getElementById("Matrimonial_icono")
-        var iconque = document.getElementById("Queen_icono")
+        var iconque = document.getElementById("Premium_icono")
         //$(imgind).fadeOut("slow");
         $(imgdob).fadeIn("slow");
         $(imgtri).fadeOut("slow");
@@ -332,22 +332,22 @@ function LinkRoomsL(clicked_id) {
         iconmat.classList.add("d-none");
         iconque.classList.add("d-none");
 
-    }else if (clicked_id == "Triple_link"  || clicked_id == "Triples" || loadedroom == "Triples") {
+    } else if (clicked_id == "Triple_link" || clicked_id == "Triples" || loadedroom == "Triples") {
         //var imgind = document.getElementById("carruselRoomIndividual")
         var imgdob = document.getElementById("carruselRoomDoble")
         var imgtri = document.getElementById("carruselRoomTriple")
         var imgmat = document.getElementById("carruselRoomMatrimonial")
-        var imgque = document.getElementById("carruselRoomQueen")
+        var imgque = document.getElementById("carruselRoomPremium")
         //var descind = document.getElementById("Individual_descripcion")
         var descdob = document.getElementById("Doble_descripcion")
         var desctri = document.getElementById("Triple_descripcion")
         var descmat = document.getElementById("Matrimonial_descripcion")
-        var descque = document.getElementById("Queen_descripcion")
+        var descque = document.getElementById("Premium_descripcion")
         //var iconind = document.getElementById("Individual_icono")
         var icondob = document.getElementById("Doble_icono")
         var icontri = document.getElementById("Triple_icono")
         var iconmat = document.getElementById("Matrimonial_icono")
-        var iconque = document.getElementById("Queen_icono")
+        var iconque = document.getElementById("Premium_icono")
         //$(imgind).fadeOut("slow");
         $(imgdob).fadeOut("slow");
         $(imgtri).fadeIn("slow");
@@ -385,22 +385,22 @@ function LinkRoomsL(clicked_id) {
         iconmat.classList.add("d-none");
         iconque.classList.add("d-none");
 
-    }else if (clicked_id == "Matrimonial_link" || clicked_id == "Matrimoniales" || loadedroom == "Matrimoniales") {
+    } else if (clicked_id == "Matrimonial_link" || clicked_id == "Matrimoniales" || loadedroom == "Matrimoniales") {
         //var imgind = document.getElementById("carruselRoomIndividual")
         var imgdob = document.getElementById("carruselRoomDoble")
         var imgtri = document.getElementById("carruselRoomTriple")
         var imgmat = document.getElementById("carruselRoomMatrimonial")
-        var imgque = document.getElementById("carruselRoomQueen")
+        var imgque = document.getElementById("carruselRoomPremium")
         //var descind = document.getElementById("Individual_descripcion")
         var descdob = document.getElementById("Doble_descripcion")
         var desctri = document.getElementById("Triple_descripcion")
         var descmat = document.getElementById("Matrimonial_descripcion")
-        var descque = document.getElementById("Queen_descripcion")
+        var descque = document.getElementById("Premium_descripcion")
         //var iconind = document.getElementById("Individual_icono")
         var icondob = document.getElementById("Doble_icono")
         var icontri = document.getElementById("Triple_icono")
         var iconmat = document.getElementById("Matrimonial_icono")
-        var iconque = document.getElementById("Queen_icono")
+        var iconque = document.getElementById("Premium_icono")
         //$(imgind).fadeOut("slow");
         $(imgdob).fadeOut("slow");
         $(imgtri).fadeOut("slow");
@@ -438,22 +438,22 @@ function LinkRoomsL(clicked_id) {
         iconmat.classList.remove("d-none");
         iconque.classList.add("d-none");
 
-    }else if (clicked_id == "Queen_link" || clicked_id == "Queen" || loadedroom == "Queen") {
+    } else if (clicked_id == "Premium_link" || clicked_id == "Premium" || loadedroom == "Premium") {
         //var imgind = document.getElementById("carruselRoomIndividual")
         var imgdob = document.getElementById("carruselRoomDoble")
         var imgtri = document.getElementById("carruselRoomTriple")
         var imgmat = document.getElementById("carruselRoomMatrimonial")
-        var imgque = document.getElementById("carruselRoomQueen")
+        var imgque = document.getElementById("carruselRoomPremium")
         //var descind = document.getElementById("Individual_descripcion")
         var descdob = document.getElementById("Doble_descripcion")
         var desctri = document.getElementById("Triple_descripcion")
         var descmat = document.getElementById("Matrimonial_descripcion")
-        var descque = document.getElementById("Queen_descripcion")
+        var descque = document.getElementById("Premium_descripcion")
         //var iconind = document.getElementById("Individual_icono")
         var icondob = document.getElementById("Doble_icono")
         var icontri = document.getElementById("Triple_icono")
         var iconmat = document.getElementById("Matrimonial_icono")
-        var iconque = document.getElementById("Queen_icono")
+        var iconque = document.getElementById("Premium_icono")
         //$(imgind).fadeOut("slow");
         $(imgdob).fadeOut("slow");
         $(imgtri).fadeOut("slow");
@@ -491,7 +491,7 @@ function LinkRoomsL(clicked_id) {
         iconmat.classList.add("d-none");
         iconque.classList.remove("d-none");
 
-    }else{
+    } else {
         return false;
     }
     localStorage.clear();
@@ -499,7 +499,7 @@ function LinkRoomsL(clicked_id) {
 
 function openLinks() {
     var dropdownLinks = document.querySelector(".dropdown-rooms");
-        dropdownLinks.style.display = "block";
+    dropdownLinks.style.display = "block";
 }
 
 function LinkRoomsS(clicked_id) {
@@ -510,7 +510,7 @@ function LinkRoomsS(clicked_id) {
     const linkS2 = document.getElementById("DobleS_link");
     const linkS3 = document.getElementById("TripleS_link");
     const linkS4 = document.getElementById("MatrimonialS_link");
-    const linkS5 = document.getElementById("QueenS_link");
+    const linkS5 = document.getElementById("PremiumS_link");
     /*if (clicked_id == "IndividualS_link" || clicked_id == "Accesibles" || loadedroom == "Accesibles") {
         document.getElementById("btnRooms").innerHTML = "Accesible Individual";
         var dropdownLinks = document.querySelector(".dropdown-rooms");
@@ -519,17 +519,17 @@ function LinkRoomsS(clicked_id) {
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgfamS = document.getElementById("carruselRoomFamiliarS")
         var imgmatS = document.getElementById("carruselRoomMatrimonialS")
-        var imgqueS = document.getElementById("carruselRoomQueenS")
+        var imgqueS = document.getElementById("carruselRoomPremiumS")
         var descindS = document.getElementById("IndividualS_descripcion")
         var descdobS = document.getElementById("DobleS_descripcion")
         var descfamS = document.getElementById("FamiliarS_descripcion")
         var descmatS = document.getElementById("MatrimonialS_descripcion")
-        var descqueS = document.getElementById("QueenS_descripcion")
+        var descqueS = document.getElementById("PremiumS_descripcion")
         var iconindS = document.getElementById("IndividualS_icono")
         var icondobS = document.getElementById("DobleS_icono")
         var iconfamS = document.getElementById("FamiliarS_icono")
         var iconmatS = document.getElementById("MatrimonialS_icono")
-        var iconqueS = document.getElementById("QueenS_icono")
+        var iconqueS = document.getElementById("PremiumS_icono")
         $(imgindS).fadeIn("slow");
         $(imgdobS).fadeOut("slow");
         $(imgfamS).fadeOut("slow");
@@ -576,17 +576,17 @@ function LinkRoomsS(clicked_id) {
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgtriS = document.getElementById("carruselRoomTripleS")
         var imgmatS = document.getElementById("carruselRoomMatrimonialS")
-        var imgqueS = document.getElementById("carruselRoomQueenS")
+        var imgqueS = document.getElementById("carruselRoomPremiumS")
         //var descindS = document.getElementById("IndividualS_descripcion")
         var descdobS = document.getElementById("DobleS_descripcion")
         var desctriS = document.getElementById("TripleS_descripcion")
         var descmatS = document.getElementById("MatrimonialS_descripcion")
-        var descqueS = document.getElementById("QueenS_descripcion")
+        var descqueS = document.getElementById("PremiumS_descripcion")
         //var iconindS = document.getElementById("IndividualS_icono")
         var icondobS = document.getElementById("DobleS_icono")
         var icontriS = document.getElementById("TripleS_icono")
         var iconmatS = document.getElementById("MatrimonialS_icono")
-        var iconqueS = document.getElementById("QueenS_icono")
+        var iconqueS = document.getElementById("PremiumS_icono")
         //$(imgindS).fadeOut("slow");
         $(imgdobS).fadeIn("slow");
         $(imgtriS).fadeOut("slow");
@@ -624,7 +624,7 @@ function LinkRoomsS(clicked_id) {
         iconmatS.classList.add("d-none");
         iconqueS.classList.add("d-none");
 
-    }else if (clicked_id == "TripleS_link"  || clicked_id == "Triples" || loadedroom == "Triples") {
+    } else if (clicked_id == "TripleS_link" || clicked_id == "Triples" || loadedroom == "Triples") {
         document.getElementById("btnRooms").innerHTML = "Tradicional Triple";
         var dropdownLinks = document.querySelector(".dropdown-rooms");
         dropdownLinks.style.display = "none";
@@ -632,17 +632,17 @@ function LinkRoomsS(clicked_id) {
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgtriS = document.getElementById("carruselRoomTripleS")
         var imgmatS = document.getElementById("carruselRoomMatrimonialS")
-        var imgqueS = document.getElementById("carruselRoomQueenS")
+        var imgqueS = document.getElementById("carruselRoomPremiumS")
         //var descindS = document.getElementById("IndividualS_descripcion")
         var descdobS = document.getElementById("DobleS_descripcion")
         var desctriS = document.getElementById("TripleS_descripcion")
         var descmatS = document.getElementById("MatrimonialS_descripcion")
-        var descqueS = document.getElementById("QueenS_descripcion")
+        var descqueS = document.getElementById("PremiumS_descripcion")
         //var iconindS = document.getElementById("IndividualS_icono")
         var icondobS = document.getElementById("DobleS_icono")
         var icontriS = document.getElementById("TripleS_icono")
         var iconmatS = document.getElementById("MatrimonialS_icono")
-        var iconqueS = document.getElementById("QueenS_icono")
+        var iconqueS = document.getElementById("PremiumS_icono")
         //$(imgindS).fadeOut("slow");
         $(imgdobS).fadeOut("slow");
         $(imgtriS).fadeIn("slow");
@@ -680,7 +680,7 @@ function LinkRoomsS(clicked_id) {
         iconmatS.classList.add("d-none");
         iconqueS.classList.add("d-none");
 
-    }else if (clicked_id == "MatrimonialS_link"  || clicked_id == "Matrimoniales" || loadedroom == "Matrimoniales") {
+    } else if (clicked_id == "MatrimonialS_link" || clicked_id == "Matrimoniales" || loadedroom == "Matrimoniales") {
         document.getElementById("btnRooms").innerHTML = "Tradicional Matrimonial";
         var dropdownLinks = document.querySelector(".dropdown-rooms");
         dropdownLinks.style.display = "none";
@@ -688,17 +688,17 @@ function LinkRoomsS(clicked_id) {
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgtriS = document.getElementById("carruselRoomTripleS")
         var imgmatS = document.getElementById("carruselRoomMatrimonialS")
-        var imgqueS = document.getElementById("carruselRoomQueenS")
+        var imgqueS = document.getElementById("carruselRoomPremiumS")
         //var descindS = document.getElementById("IndividualS_descripcion")
         var descdobS = document.getElementById("DobleS_descripcion")
         var desctriS = document.getElementById("TripleS_descripcion")
         var descmatS = document.getElementById("MatrimonialS_descripcion")
-        var descqueS = document.getElementById("QueenS_descripcion")
+        var descqueS = document.getElementById("PremiumS_descripcion")
         //var iconindS = document.getElementById("IndividualS_icono")
         var icondobS = document.getElementById("DobleS_icono")
         var icontriS = document.getElementById("TripleS_icono")
         var iconmatS = document.getElementById("MatrimonialS_icono")
-        var iconqueS = document.getElementById("QueenS_icono")
+        var iconqueS = document.getElementById("PremiumS_icono")
         //$(imgindS).fadeOut("slow");
         $(imgdobS).fadeOut("slow");
         $(imgtriS).fadeOut("slow");
@@ -736,25 +736,25 @@ function LinkRoomsS(clicked_id) {
         iconmatS.classList.remove("d-none");
         iconqueS.classList.add("d-none");
 
-    }else if (clicked_id == "QueenS_link" || clicked_id == "Queen" || loadedroom == "Queen") {
-        document.getElementById("btnRooms").innerHTML = "Exclusivo Queen";
+    } else if (clicked_id == "PremiumS_link" || clicked_id == "Premium" || loadedroom == "Premium") {
+        document.getElementById("btnRooms").innerHTML = "Exclusivo Premium";
         var dropdownLinks = document.querySelector(".dropdown-rooms");
         dropdownLinks.style.display = "none";
         //var imgindS = document.getElementById("carruselRoomIndividualS")
         var imgdobS = document.getElementById("carruselRoomDobleS")
         var imgtriS = document.getElementById("carruselRoomTripleS")
         var imgmatS = document.getElementById("carruselRoomMatrimonialS")
-        var imgqueS = document.getElementById("carruselRoomQueenS")
+        var imgqueS = document.getElementById("carruselRoomPremiumS")
         //var descindS = document.getElementById("IndividualS_descripcion")
         var descdobS = document.getElementById("DobleS_descripcion")
         var desctriS = document.getElementById("TripleS_descripcion")
         var descmatS = document.getElementById("MatrimonialS_descripcion")
-        var descqueS = document.getElementById("QueenS_descripcion")
+        var descqueS = document.getElementById("PremiumS_descripcion")
         //var iconindS = document.getElementById("IndividualS_icono")
         var icondobS = document.getElementById("DobleS_icono")
         var icontriS = document.getElementById("TripleS_icono")
         var iconmatS = document.getElementById("MatrimonialS_icono")
-        var iconqueS = document.getElementById("QueenS_icono")
+        var iconqueS = document.getElementById("PremiumS_icono")
         //$(imgindS).fadeOut("slow");
         $(imgdobS).fadeOut("slow");
         $(imgtriS).fadeOut("slow");
@@ -792,7 +792,7 @@ function LinkRoomsS(clicked_id) {
         iconmatS.classList.add("d-none");
         iconqueS.classList.remove("d-none");
 
-    }else{
+    } else {
         return false;
     }
     localStorage.clear();
@@ -801,64 +801,114 @@ function LinkRoomsS(clicked_id) {
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 function ValidarForm() {
     'use strict'
-  
+
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
-  
+
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
 
-            var response = grecaptcha.getResponse();
-            if (response.length == 0) {
-                document.getElementById("invalid-captcha").style.display = "block";
-                event.preventDefault()
-                event.stopPropagation()
-            }
-            else{
-                document.getElementById("invalid-captcha").style.display = "none";
-            }
+                var response = grecaptcha.getResponse();
+                if (response.length == 0) {
+                    document.getElementById("invalid-captcha").style.display = "block";
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                else {
+                    document.getElementById("invalid-captcha").style.display = "none";
+                }
 
-            form.classList.add('was-validated')
-        }, false)
-      })    
-  }
+                // Configurar los datos del correo electrónico
+                var emailData = {
+                    to: 'destinatario@example.com',
+                    subject: 'Asunto del correo',
+                    body: 'Contenido del correo'
+                };
 
-  function onlyNumbers(evt){
+                // Llamar a la función para enviar el correo
+                sendEmail(emailData);
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+}
+
+function onlyNumbers(evt) {
     var ASCIICode = (evt.which) ? evt.which : evt.keyCode
     if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
         return false;
     return true;
-  }
+}
 
 
 function minDate() {
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
-  var yyyy = today.getFullYear();
-  if(dd<10){
-    dd='0'+dd
-  } 
-  if(mm<10){
-    mm='0'+mm
-  } 
-  
-  today = yyyy+'-'+mm+'-'+dd;
-  var start = document.getElementById("ValidationDate");
-  start.setAttribute("min", today);
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0 so need to add 1 to make it 1!
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+    if (mm < 10) {
+        mm = '0' + mm
+    }
+
+    today = yyyy + '-' + mm + '-' + dd;
+    var start = document.getElementById("ValidationDate");
+    start.setAttribute("min", today);
 }
 
 function validateDate() {
     var fecha = document.getElementById("ValidationDate");
     if (fecha.value == "") {
-        fecha.type='text';
-    }else{
-        fecha.type='date';
+        fecha.type = 'text';
+    } else {
+        fecha.type = 'date';
     }
 }
+
+// Función para enviar el correo electrónico usando SMTPJS
+function sendEmail(data) {
+    Email.send({
+        SecureToken: 'tu_token_seguro',
+        To: data.to,
+        From: 'remite@example.com',
+        Subject: data.subject,
+        Body: data.body
+    }).then(
+        message => console.log(message)
+    );
+}
+
+let imageContainers = document.querySelectorAll('.container-overlay');
+
+imageContainers.forEach(container => {
+    container.addEventListener('click', (e) => {
+        let target = e.target.parentElement.children;
+        let image = Array.from(target).filter(child => child.tagName === 'IMG')[0];
+        console.log(image);
+        let src = image.src;
+        console.log(src)
+        let div = document.createElement('div');
+        div.style.background = 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center';
+        div.style.backgroundSize = 'contain';
+        div.style.width = '100%';
+        div.style.height = '100%';
+        div.style.position = 'fixed';
+        div.style.zIndex = '10000';
+        div.style.top = '0';
+        div.style.left = '0';
+        div.style.cursor = 'zoom-out';
+        div.addEventListener('click', function () {
+            document.body.removeChild(this);
+        });
+        document.body.appendChild(div);
+    }
+    )
+});

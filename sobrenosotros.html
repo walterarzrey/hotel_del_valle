@@ -1,86 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Del Valle Hotel | Sobre Nosotros</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/bd0bb73cdd.js" crossorigin="anonymous"></script>
-    <script src="js/functions.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="floating-whatsapp/floating-wpp.js"></script>
-    <link rel="stylesheet" href="floating-whatsapp/floating-wpp.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Del Valle Hotel | Sobre Nosotros</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://kit.fontawesome.com/bd0bb73cdd.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="floating-whatsapp/floating-wpp.js"></script>
+  <link rel="stylesheet" href="floating-whatsapp/floating-wpp.css">
 </head>
+
 <body onload="Carga()">
 
-    <!-- Barra de Navegación -->
-    <nav id="navorigin" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="background-color: #f5f5f5 !important;">
-        <div id="navdesplegable" class="container-fluid desplegable" style="width: auto; display: block;">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand desplegable-img" href="index.html">
-            <img id="myLogo" class="image-fluid logo-normal" src="img/logo_general.png" alt="LogoHotel_del_Valle.jpg">
-          </a>  
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-2">
-                <a class="nav-link letra-grande" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active letra-grande" href="#">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item mx-2 dropdown">
-                <a class="nav-link dropdown-toggle letra-grande" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Habitaciones
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Matrimoniales</a></li>
-                  <li><a id="Dobles" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Dobles</a></li>
-                  <li><a id="Triples" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Triples</a></li>
-                  <li><a id="Queen" class="dropdown-item letra-grande" href="habitaciones.html" onclick="Load(this.id)">Queen</a></li>     
-                </ul>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link letra-grande" href="encuentranos.html">Encuéntranos</a>
-              </li>
+  <!-- Barra de Navegación -->
+  <nav id="navorigin" class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+    style="background-color: #f5f5f5 !important;">
+    <div id="navdesplegable" class="container-fluid desplegable" style="width: auto; display: block;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand desplegable-img" href="index.html">
+        <img id="myLogo" class="image-fluid logo-normal" src="img/logo_general.png" alt="LogoHotel_del_Valle.jpg">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link letra-grande" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active letra-grande" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link dropdown-toggle letra-grande" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Habitaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a id="Matrimoniales" class="dropdown-item letra-grande" href="habitaciones.html"
+                  onclick="Load(this.id)">Matrimoniales</a></li>
+              <li><a id="Dobles" class="dropdown-item letra-grande" href="habitaciones.html"
+                  onclick="Load(this.id)">Dobles</a></li>
+              <li><a id="Triples" class="dropdown-item letra-grande" href="habitaciones.html"
+                  onclick="Load(this.id)">Triples</a></li>
+              <li><a id="Premium" class="dropdown-item letra-grande" href="habitaciones.html"
+                  onclick="Load(this.id)">Premium</a></li>
             </ul>
-          </div>
-        </div>
-    </nav>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link letra-grande" href="encuentranos.html">Encuéntranos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div id="primer-fade" class="primer-fade">
-      <!-- Img Principal -->
-      <div class="parallax-container-nosotros pb-3">
-        <div class="parallax-container-nosotros" style="position: relative;">
-          <div class="parallax-img-nosotros"></div>
-          <div class="parallax-overlay">
-            <div class="container-fluid position-absolute" style="top: 45%;">
-              <h3 class="text-center" style="font-weight: 350; color: #fff; font-size: 3rem;">SOBRE NOSOTROS</h3>
-              <hr class="mb-4" style="color: #fff; width: 20%; height: 0.2em; border-radius: 0.1em; margin: auto; opacity: 1 !important;">
-              <br>
-            </div>
+    <!-- Img Principal -->
+    <div class="parallax-container-nosotros pb-3">
+      <div class="parallax-container-nosotros" style="position: relative;">
+        <div class="parallax-img-nosotros"></div>
+        <div class="parallax-overlay">
+          <div class="container-fluid position-absolute" style="top: 45%;">
+            <h3 class="text-center" style="font-weight: 350; color: #fff; font-size: 3rem;">SOBRE NOSOTROS</h3>
+            <hr class="mb-4"
+              style="color: #fff; width: 20%; height: 0.2em; border-radius: 0.1em; margin: auto; opacity: 1 !important;">
+            <br>
           </div>
         </div>
       </div>
+    </div>
 
 
     <!-- Nosotros -->
     <div class="container-fluid texture pb-5" style="width: 100%;">
       <h3 class="display-6 text-center pt-3 pe-3 ps-3" style="font-weight: 500;"><strong>NOSOTROS</strong></h3>
-      <h4 class="display-7 text-center pb-2 pe-3 ps-3" style="font-weight: 200; color: #616161;"><strong>CONOCE MÁS SOBRE EL HOTEL DEL VALLE</strong></h4>
+      <h4 class="display-7 text-center pb-2 pe-3 ps-3" style="font-weight: 200; color: #616161;"><strong>CONOCE MÁS
+          SOBRE EL HOTEL DEL VALLE</strong></h4>
       <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
       <div class="container-fluid" style="max-width: 1400px;">
-          <div class="container-completo col-sm-12 col-md-12 col-lg-11">
-              <p class="g-fs-14 g-fs-md-18" style="text-align: center;">
-                Desde 2020 el Hotel Del Valle ha ofrecido una variedad de servicios especialmente diseñados para divertirse y relajarse. Ubicado en a solo 8 minutos del centro de la ciudad de Huancayo, Del Valle Hotel se ubica estratégicamente entre los lugares turísticos urbanos más conocidos de la hermosa Ciudad Incontrastable. Contamos con una impresionante vista tanto diurna como nocturna, con un estilo moderno complementado con una decoración elegante y natural. Tenemos la infraestructura y el personal adecuado para hacer que tu estadía sea una experiencia inolvidable. Ven y disfruta del Valle del Mantaro, nosotros nos aseguraremos de brindarte un lugar acogedor y confortable. Estamos orgullosos de haber obtenido varios muchas referencias positivas gracias a los testimonios de nuestros huéspedes. Ya sea que nos visites en familia, en pareja o con amigos, te invitamos a que vivas la experiencia de todo lo que tenemos para ofrecerte.
-              </p>
-          </div>
+        <div class="container-completo col-sm-12 col-md-12 col-lg-11">
+          <p class="g-fs-14 g-fs-md-18" style="text-align: center;">
+            Desde 2020 el Hotel Del Valle ha ofrecido una variedad de servicios especialmente diseñados para divertirse
+            y relajarse. Ubicado en a solo 8 minutos del centro de la ciudad de Huancayo, Del Valle Hotel se ubica
+            estratégicamente entre los lugares turísticos urbanos más conocidos de la hermosa Ciudad Incontrastable.
+            Contamos con una impresionante vista tanto diurna como nocturna, con un estilo moderno complementado con una
+            decoración elegante y natural. Tenemos la infraestructura y el personal adecuado para hacer que tu estadía
+            sea una experiencia inolvidable. Ven y disfruta del Valle del Mantaro, nosotros nos aseguraremos de
+            brindarte un lugar acogedor y confortable. Estamos orgullosos de haber obtenido varios muchas referencias
+            positivas gracias a los testimonios de nuestros huéspedes. Ya sea que nos visites en familia, en pareja o
+            con amigos, te invitamos a que vivas la experiencia de todo lo que tenemos para ofrecerte.
+          </p>
         </div>
       </div>
+    </div>
 
     <!-- Imagen secundaria -->
     <div id="container-completo" class="fade-in">
@@ -94,45 +112,115 @@
       <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Responsabilidad Social</strong></h3>
       <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
       <div class="container-fluid" style="max-width: 1400px;">
-          <div class="container-completo col-sm-12 col-md-12 col-lg-11">
-              <p class="g-fs-14 g-fs-md-18" style="text-align: center;">
-                Durante los últimos 2 años, realizamos eventos por celebraciones nacionales como "Semana Santa" y de esta forma nuestros huéspedes pasan unas inolvidables vacaciones en el Hotel Del Valle. Tqambién estamos apostando para ser reconocidos como un hotel que da la bienvenida a los turístas locales y extranjeros por parte del Ministerio de Turismo. Súmate a nuestra iniciativa innovadora.
-              </p>
-          </div>
+        <div class="container-completo col-sm-12 col-md-12 col-lg-11">
+          <p class="g-fs-14 g-fs-md-18" style="text-align: center;">
+            Durante los últimos 2 años, realizamos eventos por celebraciones nacionales como "Semana Santa" y de esta
+            forma nuestros huéspedes pasan unas inolvidables vacaciones en el Hotel Del Valle. Tqambién estamos
+            apostando para ser reconocidos como un hotel que da la bienvenida a los turístas locales y extranjeros por
+            parte del Ministerio de Turismo. Súmate a nuestra iniciativa innovadora.
+          </p>
         </div>
+      </div>
     </div>
 
-  <!-- Reseñas -->
-  <div class="container-fluid pb-5" style="width: 100%;">
-    <div class="fade-in">
-      <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Algunas reseñas</strong></h3>
-      <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
+    <!-- Áreas comunes -->
+    <div class="container-fluid texture pb-5" style="width: 100%;">
+      <h3 class="display-6 text-center p-3 fade-in" style="font-weight: 500;"><strong>Áreas Comunes</strong></h3>
+      <hr class="mb-4 fade-in" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
+      <div class="row col-sm-12 col-md-10 col-lg-10 m-0 m-auto">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 fade-in">
+          <div class="container-overlay sm mb-4">
+            <img data-enlargable src="img/comedor.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Comedor" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Comedor</div>
+            </div>
+          </div>
+
+          <div class="container-overlay lg mb-4">
+            <img data-enlargable src="img/cochera.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Cochera" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Cochera</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 fade-in">
+          <div class="container-overlay lg mb-4">
+            <img data-enlargable src="img/fachada.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Fachada principal" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Fachada principal</div>
+            </div>
+          </div>
+
+          <div class="container-overlay sm mb-4">
+            <img data-enlargable src="img/hall1.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Hall principal" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Hall principal</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 fade-in ">
+          <div class="container-overlay sm mb-4">
+            <img data-enlargable src="img/smoke_area.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Zona de fumadores" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Zona de fumadores</div>
+            </div>
+          </div>
+
+          <div class="container-overlay lg mb-4">
+            <img data-enlargable src="img/hall2.jpeg"
+              class="w-100 h-100 shadow-1-strong rounded" alt="Sala de espera" />
+            <div class="overlay rounded">
+              <div class="overlay-text">Sala de espera</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mb-4 slide-in from-down" style="max-width: 1400px;">
-      <div class="viñeta col-2">
-        <img src="img/Viñeta.png" alt="">
+
+    <!-- Reseñas -->
+    <!-- <div class="container-fluid texture pb-5" style="width: 100%;">
+      <div class="fade-in">
+        <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Algunas reseñas</strong></h3>
+        <hr class="mb-4" style="color: #000000; width: 12%; height: 0.2em; border-radius: 0.1em; margin: auto;">
       </div>
-      <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
-        <p class="d-flex col-12" style="text-align: justify;">
-          Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer, adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
-        </p>
-        <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
-          <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
-          <div class="d-block">
-            <p class="ps-2 m-0" style="font-weight: bold; font-size: 1.5rem; text-align: left;">Alex J. Martinez</p>
-            <p class="ps-2" style="font-size: 1rem; color: #ad7f43; text-align: left;">Agente de viajes</p>
+      <div
+        class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mb-4 slide-in from-down"
+        style="max-width: 1400px;">
+        <div class="viñeta col-2">
+          <img src="img/Viñeta.png" alt="">
+        </div>
+        <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
+          <p class="d-flex col-12" style="text-align: justify;">
+            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer,
+            adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
+          </p>
+          <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
+            <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
+            <div class="d-block">
+              <p class="ps-2 m-0" style="font-weight: bold; font-size: 1.5rem; text-align: left;">Alex J. Martinez</p>
+              <p class="ps-2" style="font-size: 1rem; color: #ad7f43; text-align: left;">Agente de viajes</p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
+      <div
+        class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down"
+        style="max-width: 1400px;">
         <div class="viñeta col-2">
           <img src="img/Viñeta.png" alt="">
         </div>
         <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
           <p class="d-flex col-12" style="text-align: justify;">
-            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer, adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
+            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer,
+            adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
           </p>
           <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
             <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
@@ -142,33 +230,18 @@
             </div>
           </div>
         </div>
-        </div>
-      
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
-        <div class="viñeta col-2">
-          <img src="img/Viñeta.png" alt="">
-        </div>
-        <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
-          <p class="d-flex col-12" style="text-align: justify;">
-            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer, adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
-          </p>
-          <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
-            <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
-            <div class="d-block">
-              <p class="ps-2 m-0" style="font-weight: bold; font-size: 1.5rem; text-align: left;">Alex J. Martinez</p>
-              <p class="ps-2" style="font-size: 1rem; color: #ad7f43; text-align: left;">Agente de viajes</p>
-            </div>
-          </div>
-        </div>
-        </div>
+      </div>
 
-      <div class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down" style="max-width: 1400px;">
+      <div
+        class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down"
+        style="max-width: 1400px;">
         <div class="viñeta col-2">
           <img src="img/Viñeta.png" alt="">
         </div>
         <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
           <p class="d-flex col-12" style="text-align: justify;">
-            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer, adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
+            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer,
+            adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
           </p>
           <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
             <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
@@ -178,16 +251,69 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div
+        class="container-reseña container-fluid d-flex flex-wrap col-md-12 col-lg-11 col-xl-8 mt-5 mb-4 slide-in from-down"
+        style="max-width: 1400px;">
+        <div class="viñeta col-2">
+          <img src="img/Viñeta.png" alt="">
         </div>
-  </div>
+        <div class="d-flex flex-wrap card-reseña col-sm-10 col-md-10 col-lg-10 p-4">
+          <p class="d-flex col-12" style="text-align: justify;">
+            Gran personal y ambientes, todo lo recomiedo muchísimo es excelente en todos sus aspectos a mi parecer,
+            adore toda la experiencia de viaje y estadía. Le doy 5 estrellas de 5.
+          </p>
+          <div class="d-flex flex-wrap" style="align-items: center; justify-content: flex-start;">
+            <img class="rounded-circle avatar" src="img/persona1.jpg" alt="">
+            <div class="d-block">
+              <p class="ps-2 m-0" style="font-weight: bold; font-size: 1.5rem; text-align: left;">Alex J. Martinez</p>
+              <p class="ps-2" style="font-size: 1rem; color: #ad7f43; text-align: left;">Agente de viajes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Form enviar reseña -->
+    <!-- <div class="container-fluid fade-in" style="width: 100%; margin-bottom: 2rem;">
+      <div class="container-fluid p-0" style="max-width: 1200px;">
+        <h3 class="display-6 text-center p-3" style="font-weight: 500;"><strong>Escribe tu reseña</strong></h3>
+        <hr style="color: #000000; width: 18%; height: 0.2em; border-radius: 0.1em; margin: auto;">
+        <form action="https://formsubmit.co/administracion@delvalle-hotel.com" method="POST" class="row g-3 needs-validation"
+          style="margin: 0 !important;" novalidate>
+          <div class="form-floating col-sm-12 col-md-12 px-4">
+            <input type="text" name="Nombres" class="reseña" id="ValidationNombre"
+              placeholder="Nombres y Apellidos" required>
+            <label class="px-4" for="ValidationNombre"></label>
+            <div class="invalid-feedback">
+              Ingrese su Nombre(s) y Apellido(s).
+            </div>
+          </div>
+          <div class="form-floating col-sm-12 col-md-12 px-4">
+            <textarea class="reseña" style="height: 8rem;" name="Reseña" id="ValidationTextArea"
+              placeholder="Reseña"></textarea>
+            <label class="px-4" for="ValidationTextArea"></label>
+          </div>
+          <div class="col-sm-12 col-md-6 mx-auto px-4 mt-3">
+            <button class="btn btn-amarillo" type="submit" style="width: 100%;" onclick="ValidarReseña()">ENVIAR</button>
+          </div>
+
+          <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/encuentranos.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo Mensaje Hotel!">
+        </form>
+      </div>
+    </div> -->
 
     <!-- Footer -->
     <div class="container-completo">
       <footer class="d-block">
         <div class="footer-top">
-          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-8 col-uxl-8">
             <div class="col-6 mt-2">
-              <img class="img-footer" src="img/logo_largo_v2_blanco.png" alt="logo.jpg" style="vertical-align: middle; border-style: none; height: 4rem; width: auto;">
+              <img class="img-footer" src="img/logo_largo_v2_blanco.png" alt="logo.jpg"
+                style="vertical-align: middle; border-style: none; height: 4rem; width: auto;">
             </div>
             <div class="d-flex justify-content-end col-6">
               <div class="d-inline-flex justify-content-end align-items-center flex-wrap">
@@ -204,28 +330,48 @@
             </div>
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
           </div>
-          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-7 col-uxl-7">
+          <div class="container-fluid d-flex flex-wrap col-xsm-11 col-sm-11 col-md-10 col-lg-8 col-uxl-8">
             <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-5 col-uxl-6 mb-md-0 p-3 ps-0 no-spaces">
               <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">DEL VALLE HOTEL</h6>
-                <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8 minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar acogedor y confortable en tu visita a esta hermosa ciudad.</p>
+                <p style="color: #bebebe; text-align: justify;">Vive una experiencia inolvidable! Ubicados a solo 8
+                  minutos del centro de Huancayo, contamos con la mejor infraestructura y el personal adecuado, con un
+                  estilo moderno complementado con una decoración elegante y natural. Todo para brindarte un lugar
+                  acogedor y confortable en tu visita a esta hermosa ciudad.</p>
               </div>
               <br>
               <div class="d-flex align-items-center footer-top-space">
                 <div class="m-1 ms-0" style="color: #bebebe; font-weight: 500;">Síguenos en:</div>
-                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a></div>
-                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="m-1" style="color: #bebebe; font-weight: 500;"><a href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel." target="_blank" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a> </span></div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;">
+                  <a href="https://www.facebook.com/delvallehotelhuancayo" class="social-icons" target="_blank"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;">
+                  <a href="https://www.instagram.com/del.valle_hotel/" class="social-icons" target="_blank"><i
+                      class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="m-1" style="color: #bebebe; font-weight: 500;">
+                  <a href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel." target="_blank"
+                    class="social-icons"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
               </div>
             </div>
-            <div class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
+            <div
+              class="col-xsm-5 col-sm-5 col-md-5 col-lg-3 col-uxl-2 mb-md-0 p-3 no-spaces footer-bottom-space footer-bottom-space-1">
               <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">ENLACES ÚTILES</h6>
                 <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
-                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="sobrenosotros.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre Nosotros</span></a></li>
-                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="habitaciones.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Habitaciones</span></a></li>
-                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html" style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Encuéntranos</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="#" style="align-items: center;"><i
+                        class="fa-solid fa-angle-right"></i><span class="text">Inicio</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="sobrenosotros.html"
+                      style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span class="text">Sobre
+                        Nosotros</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="habitaciones.html"
+                      style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span
+                        class="text">Habitaciones</span></a></li>
+                  <li class="icon-text-bx mb-1"><a class="d-flex text-bx" href="encuentranos.html"
+                      style="align-items: center;"><i class="fa-solid fa-angle-right"></i><span
+                        class="text">Encuéntranos</span></a></li>
                 </ul>
               </div>
             </div>
@@ -233,16 +379,28 @@
               <div class="block-23 mb-3">
                 <h6 class="footer-heading d-flex titulo-footer mb-4" style="color: #fbfbfb;">CONTÁCTANOS</h6>
                 <ul class="p-0" style="list-style: none; color: #fbfbfb;">
-                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333" target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot" style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av. Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
-                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51969000488"><i class="fa-solid fa-phone"></i><span class="text">+51 969 000 488</span></a></li>
-                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank" href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel."><i class="fa-brands fa-whatsapp"></i><span class="text">+51 975 810 499</span></a></li>
-                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="mailto:reservas@delvalle-hotel.com"><i class="fa-solid fa-envelope"></i><span class="text">reservas@delvalle-hotel.com</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx"
+                      href="https://www.google.com/maps?ll=-12.046407,-75.201528&z=18&t=m&hl=es-419&gl=PE&mapclient=embed&cid=13825044518372166333"
+                      target="_blank" style="align-items: flex-start;"><i class="fa-solid fa-location-dot"
+                        style="padding-top: 0.4em;"></i><span class="text" style="margin-left: 0.7em !important;">Av.
+                        Francisca de la Calle N° 221, El Tambo, Huancayo, Perú</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" href="tel:+51969000488"><i
+                        class="fa-solid fa-phone"></i><span class="text">+51 969 000 488</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx" target="_blank"
+                      href="https://wa.me/51975810499?text=Quisiera%20información%20sobre%20el%20hotel."><i
+                        class="fa-brands fa-whatsapp"></i><span class="text">+51 975 810 499</span></a></li>
+                  <li class="icon-text-bx mb-2"><a class="d-flex text-bx"
+                      href="mailto:administracion@delvalle-hotel.com"><i class="fa-solid fa-envelope"></i><span
+                        class="text">administracion@delvalle-hotel.com</span></a></li>
                 </ul>
               </div>
-              <form action="https://formsubmit.co/reservas@delvalle-hotel.com" method="POST" class="subscribe-form">
+              <form action="https://formsubmit.co/administracion@delvalle-hotel.com" method="POST"
+                class="subscribe-form">
                 <div class="form-group d-flex">
-                <input type="email" name="email" class="form-control rounded-left" placeholder="Ingrese su correo electrónico" required>
-                <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
+                  <input type="email" name="email" class="form-control rounded-left"
+                    placeholder="Ingrese su correo electrónico" required>
+                  <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i
+                      class="ion-ios-send"></i></button>
                 </div>
 
                 <input type="hidden" name="_next" value="https://walterarzrey.github.io/hotel_del_valle/index.html">
@@ -251,11 +409,12 @@
               </form>
             </div>
           </div>
-          </div>
+        </div>
         <div class="footer-bottom" style="margin-top: -1px;">
           <div class="container-fluid d-flex flex-wrap col-md-7 col-lg-7">
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
-            <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">Todos los derechos reservados - ©2022 Del Valle Hotel</p>
+            <p class="m-0" style="text-align: center; width: 100%; color: #bebebe; font-size: 0.7em; font-weight: 600;">
+              Todos los derechos reservados - ©2023 Del Valle Hotel</p>
             <hr style="width: 100%; color: #fbfbfb; opacity: .4; height: 0.1em;">
           </div>
         </div>
@@ -266,8 +425,9 @@
 
   <div id="myDiv" style="z-index: 99;"></div>
 
-<script src="js/bootstrap.js"></script>
-<script src="js/observers.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/observers.js"></script>
+  <script src="js/functions.js"></script>
 </body>
 <script type="text/javascript">
   $(function () {
@@ -281,4 +441,5 @@
     });
   });
 </script>
+
 </html>
